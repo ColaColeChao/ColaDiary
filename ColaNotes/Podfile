@@ -1,0 +1,12 @@
+platform :ios, '10.0'
+
+target "ColaNotes" do
+
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'FMDB'
+pod 'Masonry'
+pod 'SDWebImage'
+
+end

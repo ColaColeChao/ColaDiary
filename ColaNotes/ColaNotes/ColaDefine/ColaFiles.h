@@ -20,6 +20,7 @@
 #import "NSString+Category.h"
 #import "UILabel+Category.h"
 #import "UIButton+Position.h"
+#import "UIButton+Category.h"
 
 //////////////   手动导入第三方引用   /////////////
 

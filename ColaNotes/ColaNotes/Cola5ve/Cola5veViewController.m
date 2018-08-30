@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //  设置导航栏标题
+    [self setNavTitle:@"5ve"];
+    
+    //  设置导航栏为自定义的渐变颜色
+    [self setNavItemBackgroundColor:ColaHex(0xCB89DE)];
 }
 
 - (void)didReceiveMemoryWarning {

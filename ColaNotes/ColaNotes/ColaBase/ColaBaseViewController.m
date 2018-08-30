@@ -14,6 +14,10 @@
 @property (nonatomic, strong) UIImageView *navItemImageView;
 /** 自定义导航栏标题 */
 @property (nonatomic, strong) UILabel *navTitleLab;
+/** 自定义导航栏左侧按钮 */
+@property (nonatomic, strong) UIButton *leftNavBarButton;
+/** 自定义导航栏右侧按钮 */
+@property (nonatomic, strong) UIButton *rightNavBarButton;
 @end
 
 @implementation ColaBaseViewController
@@ -105,19 +109,29 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 - (void)setLeftNavTitle:(NSString*)leftTitle
 {
-    
+    [self setLeftNavTitle:leftTitle color:Cola_NavBarDefaultColor font:Cola_NavBarDefaultFont];
 }
 - (void)setLeftNavTitle:(NSString*)leftTitle color:(UIColor*)color
 {
-    
+    [self setLeftNavTitle:leftTitle color:color font:Cola_NavBarDefaultFont];
 }
 - (void)setLeftNavTitle:(NSString*)leftTitle font:(UIFont*)font
 {
-    
+    [self setLeftNavTitle:leftTitle color:Cola_NavBarDefaultColor font:font];
 }
 - (void)setLeftNavTitle:(NSString*)leftTitle color:(UIColor*)color font:(UIFont*)font
 {
-    
+    NSString *string = [NSString stringWithFormat:@"%@",leftTitle];
+    [self.leftNavBarButton setImage:nil forState:UIControlStateNormal];
+    [self.leftNavBarButton setTitle:string forState:UIControlStateNormal];
+    [self.leftNavBarButton setTitleColor:color forState:UIControlStateNormal];
+    self.leftNavBarButton.titleLabel.font = font;
+    CGSize size = [string sizeInLabelWithMaxSize:CGSizeMake(100, 44) txtFont:font lines:1];
+    CGFloat width = size.width < 30 ? 50:size.width;
+    width = width > 80 ? 80:width;
+    self.leftNavBarButton.frame = CGRectMake(15, Cola_StatusBarHeight, width, Cola_NavItemHeight);
+    [self.leftNavBarButton addTarget:self action:@selector(leftNavBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view bringSubviewToFront:self.leftNavBarButton];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -127,15 +141,23 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 - (void)setLeftNavImageName:(NSString*)imageName
 {
-    
+    UIImage *image = [UIImage imageNamed:imageName];
+    [self setLeftNavImage:image];
 }
 - (void)setLeftNavImage:(UIImage*)image
 {
-    
+    [self.leftNavBarButton setImage:image forState:UIControlStateNormal];
+    [self.leftNavBarButton setTitle:@"" forState:UIControlStateNormal];
+    CGSize size = image.size;
+    CGFloat width = size.width < 30 ? 50:size.width;
+    width = width > 80 ? 80:width;
+    self.leftNavBarButton.frame = CGRectMake(15, Cola_StatusBarHeight, width, Cola_NavItemHeight);
+    [self.leftNavBarButton addTarget:self action:@selector(leftNavBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view bringSubviewToFront:self.leftNavBarButton];
 }
 - (void)setLeftNavImageView:(UIImageView*)imageView
 {
-    
+    [self setLeftNavImage:imageView.image];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -146,19 +168,29 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 - (void)setRightNavTitle:(NSString*)rightTitle
 {
-    
+    [self setRightNavTitle:rightTitle color:Cola_NavBarDefaultColor font:Cola_NavBarDefaultFont];
 }
 - (void)setRightNavTitle:(NSString*)rightTitle color:(UIColor*)color
 {
-    
+    [self setRightNavTitle:rightTitle color:color font:Cola_NavBarDefaultFont];
 }
 - (void)setRightNavTitle:(NSString*)rightTitle font:(UIFont*)font
 {
-    
+    [self setRightNavTitle:rightTitle color:Cola_NavBarDefaultColor font:font];
 }
 - (void)setRightNavTitle:(NSString*)rightTitle color:(UIColor*)color font:(UIFont*)font
 {
-    
+    NSString *string = [NSString stringWithFormat:@"%@",rightTitle];
+    [self.rightNavBarButton setImage:nil forState:UIControlStateNormal];
+    [self.rightNavBarButton setTitle:string forState:UIControlStateNormal];
+    [self.rightNavBarButton setTitleColor:color forState:UIControlStateNormal];
+    self.rightNavBarButton.titleLabel.font = font;
+    CGSize size = [string sizeInLabelWithMaxSize:CGSizeMake(100, 44) txtFont:font lines:1];
+    CGFloat width = size.width < 30 ? 50:size.width;
+    width = width > 80 ? 80:width;
+    self.rightNavBarButton.frame = CGRectMake(Cola_Width-15-width, Cola_StatusBarHeight, width, Cola_NavItemHeight);
+    [self.rightNavBarButton addTarget:self action:@selector(rightNavBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view bringSubviewToFront:self.rightNavBarButton];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -168,15 +200,35 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 - (void)setRightNavImageName:(NSString*)imageName
 {
-    
+    UIImage *image = [UIImage imageNamed:imageName];
+    [self setRightNavImage:image];
 }
 - (void)setRightNavImage:(UIImage*)image
 {
-    
+    [self.rightNavBarButton setImage:image forState:UIControlStateNormal];
+    [self.rightNavBarButton setTitle:@"" forState:UIControlStateNormal];
+    CGSize size = image.size;
+    CGFloat width = size.width < 30 ? 50:size.width;
+    width = width > 80 ? 80:width;
+    self.rightNavBarButton.frame = CGRectMake(Cola_Width-15-width, Cola_StatusBarHeight, width, Cola_NavItemHeight);
+    [self.rightNavBarButton addTarget:self action:@selector(rightNavBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view bringSubviewToFront:self.rightNavBarButton];
 }
 - (void)setRightNavImageView:(UIImageView*)imageView
 {
-    
+    [self setRightNavImage:imageView.image];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////                   自定义导航栏单按钮点击事件                 //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)leftNavBarButtonAction:(UIButton*)sender
+{
+    NSLog(@"子类未实现导航栏左侧单按钮的点击事件");
+}
+- (void)rightNavBarButtonAction:(UIButton *)sender
+{
+    NSLog(@"子类未实现导航栏右侧单按钮的点击事件");
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -201,6 +253,24 @@
         [self.view addSubview:_navTitleLab];
     }
     return _navTitleLab;
+}
+- (UIButton*)leftNavBarButton
+{
+    if (!_leftNavBarButton) {
+        _leftNavBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _leftNavBarButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [self.view addSubview:_leftNavBarButton];
+    }
+    return _leftNavBarButton;
+}
+- (UIButton*)rightNavBarButton
+{
+    if (!_rightNavBarButton) {
+        _rightNavBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rightNavBarButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+        [self.view addSubview:_rightNavBarButton];
+    }
+    return _rightNavBarButton;
 }
 
 - (void)didReceiveMemoryWarning {

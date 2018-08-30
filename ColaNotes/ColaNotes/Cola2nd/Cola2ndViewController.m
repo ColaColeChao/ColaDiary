@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //  设置导航栏标题
+    [self setNavTitle:@"2nd"];
+    
+    //  设置导航栏为自定义的渐变颜色
+    [self setNavItemBackgroundColor:ColaHex(0x95ACE6)];
+    
 }
 
 - (void)didReceiveMemoryWarning {

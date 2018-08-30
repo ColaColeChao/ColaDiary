@@ -15,6 +15,11 @@
 
 @interface ColaTabViewController ()
 
+/** 自定义UITabbar的背景 */
+@property (nonatomic, strong) UIImageView *tabbarImageView;
+/** 记录上一次点击的UITabbarButton */
+@property (nonatomic, strong) UIButton *lastClickButton;
+
 @end
 
 @implementation ColaTabViewController
@@ -26,8 +31,22 @@
     //  初始化UITabbarControllers
     [self initTabbarControllers];
     
+    //   自定义UITabbar的背景
+    [self customTabbarBackgroundImageView];
+    
     //  初始化UITabbarButtons
     [self initTabbarButtons];
+}
+
+#pragma mark -
+#pragma mark - 自定义UITabbar的背景
+- (void)customTabbarBackgroundImageView
+{
+    //  加载前，把self.tabbarImageView可能存在的所有子视图移除掉
+    for (UIView *tmpView in self.tabbarImageView.subviews) {
+        [tmpView removeFromSuperview];
+    }
+    self.tabbarImageView.frame = CGRectMake(0, 0, Cola_Width, 49);
 }
 
 
@@ -50,16 +69,62 @@
     //  5ve ViewController
     Cola5veViewController *vc5st = [[Cola5veViewController alloc] init];
     ColaNavBaseViewController *nav5st = [[ColaNavBaseViewController alloc] initWithRootViewController:vc5st];
-    self.tabBarController.viewControllers = @[nav1st, nav2st, nav3st, nav4st, nav5st];
+    self.viewControllers = @[nav1st, nav2st, nav3st, nav4st, nav5st];
 }
 
 #pragma mark -
 #pragma mark - 初始化UITabbarButtons
 - (void)initTabbarButtons
 {
-    NSArray *btnNormalIcons = @[@"",@"",@"",@"",@""];
-    NSArray *btnSelectIcons = @[@"",@"",@"",@"",@""];
-    NSArray *btnTitles = @[@"",@"",@"",@"",@""];
+    NSArray *btnNormalIcons = @[@"cola_tabbar_n_nor",@"cola_tabbar_o_nor",@"cola_tabbar_t_nor",@"cola_tabbar_e_nor",@"cola_tabbar_s_nor"];
+    NSArray *btnSelectIcons = @[@"cola_tabbar_n_sel",@"cola_tabbar_o_sel",@"cola_tabbar_t_sel",@"cola_tabbar_e_sel",@"cola_tabbar_s_sel"];
+    NSArray *btnTitles = @[@"n",@"o",@"t",@"e",@"s"];
+    int i=0;
+    for (NSString *title in btnTitles) {
+        UIImage *selImage = [UIImage imageNamed:btnSelectIcons[i]];
+        UIImage *norImage = [UIImage imageNamed:btnNormalIcons[i]];
+        UIColor *norColor = ColaHex(0xdddddd);
+        UIColor *selColor = ColaHex(0x89B9DE);
+        UIButton *button = [UIButton buttonWithTitle:title norTxtColor:norColor selTxtColor:selColor txtFont:[UIFont boldSystemFontOfSize:10.f] norImage:norImage selImage:selImage target:self action:@selector(tabbarButtonClickAction:)];
+        button.frame = CGRectMake(Cola_Width*.2*i, 0, Cola_Width*.2, 49);
+        [button setImagePosition:ButtonImagePositionTop spacing:2.f];
+        button.tag = i;
+        [self.tabbarImageView addSubview:button];
+        if (0 == i) {
+            button.selected = YES;
+            self.selectedIndex = i;
+            _lastClickButton = button;
+        } else {
+            button.selected = NO;
+        }
+        i++;
+    }
+}
+
+#pragma mark -
+#pragma mark - UITabbarButton点击事件
+- (void)tabbarButtonClickAction:(UIButton*)sender
+{
+    if (sender.tag == _lastClickButton.tag) {
+        return;
+    }
+    sender.selected = YES;
+    self.selectedIndex = sender.tag;
+    _lastClickButton.selected = NO;
+    _lastClickButton = sender;
+}
+
+#pragma mark -
+#pragma mark - 懒加载部分
+- (UIImageView*)tabbarImageView
+{
+    if (!_tabbarImageView) {
+        _tabbarImageView = [UIImageView new];
+        _tabbarImageView.backgroundColor = [UIColor whiteColor];
+        _tabbarImageView.userInteractionEnabled = YES;
+        [self.tabBar addSubview:_tabbarImageView];
+    }
+    return _tabbarImageView;
 }
 
 - (void)didReceiveMemoryWarning {

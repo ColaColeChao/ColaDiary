@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //  设置导航栏标题
+    [self setNavTitle:@"4ur"];
+    
+    //  设置导航栏为自定义的渐变颜色
+    [self setNavItemBackgroundStartColor:ColaHex(0xB9E9CE) endColor:ColaHex(0xBDE7DA)];
 }
 
 - (void)didReceiveMemoryWarning {

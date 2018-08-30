@@ -14,5 +14,9 @@
 /** 导航栏标题默认字体颜色 */
 #define Cola_NavTitleDetaultColor [UIColor whiteColor]
 /** 导航栏标题默认字体 */
-#define Cola_NavTitleDefaultFont [UIFont boldSystemFontOfSize:16.f]
+#define Cola_NavTitleDefaultFont [UIFont boldSystemFontOfSize:18.f]
 
+/** 导航栏上左右自定义按钮的默认字体 */
+#define Cola_NavBarDefaultFont [UIFont systemFontOfSize:14.f]
+/** 导航栏上左右自定义按钮的字体颜色 */
+#define Cola_NavBarDefaultColor [UIColor whiteColor]

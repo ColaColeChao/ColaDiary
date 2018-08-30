@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Cola1stViewController.h"
+#import "ColaTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    ColaNavBaseViewController *rootNav = [[ColaNavBaseViewController alloc] initWithRootViewController:[[Cola1stViewController alloc] init]];
-    self.window.rootViewController = rootNav;
+    self.window.rootViewController = [[ColaTabViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

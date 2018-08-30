@@ -16,6 +16,3 @@
 /** 导航栏标题默认字体 */
 #define Cola_NavTitleDefaultFont [UIFont boldSystemFontOfSize:16.f]
 
-@interface ColaBaseConfig : NSObject
-
-@end

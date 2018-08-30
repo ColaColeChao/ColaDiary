@@ -24,6 +24,8 @@
 		FA4E3F49212C17C60033ABF8 /* ColaNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */; };
 		FAA5EADC21379BC600FDACA5 /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EADB21379BC600FDACA5 /* UIButton+Position.m */; };
 		FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EADE21379F5E00FDACA5 /* UIButton+Category.m */; };
+		FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */; };
+		FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,10 @@
 		FAA5EADB21379BC600FDACA5 /* UIButton+Position.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Position.m"; sourceTree = "<group>"; };
 		FAA5EADD21379F5E00FDACA5 /* UIButton+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
 		FAA5EADE21379F5E00FDACA5 /* UIButton+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
+		FAA5EAE0213802BD00FDACA5 /* ColaBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseTableViewController.h; sourceTree = "<group>"; };
+		FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseTableViewController.m; sourceTree = "<group>"; };
+		FAA5EAE3213802D300FDACA5 /* ColaBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseTableViewCell.h; sourceTree = "<group>"; };
+		FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseTableViewCell.m; sourceTree = "<group>"; };
 		FAB1A17521354D3F004F1A14 /* ColaMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaMacros.h; sourceTree = "<group>"; };
 		FAB1A17721354E02004F1A14 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FAB1A17921354E7B004F1A14 /* ColaFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaFiles.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 				FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */,
 				FA10178D21369947006AC1D7 /* ColaTabViewController.h */,
 				FA10178E21369947006AC1D7 /* ColaTabViewController.m */,
+				FAA5EAE0213802BD00FDACA5 /* ColaBaseTableViewController.h */,
+				FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */,
+				FAA5EAE3213802D300FDACA5 /* ColaBaseTableViewCell.h */,
+				FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */,
 			);
 			path = ColaBase;
 			sourceTree = "<group>";
@@ -347,6 +357,8 @@
 				FAA5EADC21379BC600FDACA5 /* UIButton+Position.m in Sources */,
 				FA4E3F42212C15BD0033ABF8 /* main.m in Sources */,
 				FA10177C21364538006AC1D7 /* Cola4urViewController.m in Sources */,
+				FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */,
+				FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */,
 				FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */,
 				FA10178F21369947006AC1D7 /* ColaTabViewController.m in Sources */,
 				FA10177321364516006AC1D7 /* Cola1stViewController.m in Sources */,

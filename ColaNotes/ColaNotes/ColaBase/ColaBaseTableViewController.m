@@ -9,6 +9,8 @@
 #import "ColaBaseTableViewController.h"
 
 @interface ColaBaseTableViewController ()
+<UITableViewDelegate,
+UITableViewDataSource>
 
 @end
 
@@ -17,6 +19,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //  当前列表请求的分页数，默认为1
+    _currentPage = 1;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////                       UITableViewDelegate                     //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return .0f;
+}
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return .0f;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////                     UITableViewDataSource                   //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [ColaBaseTableViewCell new];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////

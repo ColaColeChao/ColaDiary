@@ -14,6 +14,8 @@
 //////////////////   基础类引用   //////////////////
 #import "ColaBaseViewController.h"
 #import "ColaNavBaseViewController.h"
+#import "ColaBaseTableViewController.h"
+#import "ColaBaseTableViewCell.h"
 
 //////////////////   扩展类引用   //////////////////
 #import "UIImage+Category.h"

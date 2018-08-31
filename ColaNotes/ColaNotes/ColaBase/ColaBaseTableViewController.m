@@ -7,6 +7,9 @@
 //
 
 #import "ColaBaseTableViewController.h"
+#import "MJRefresh.h"
+#import "ColaTableHeadRefresh.h"
+#import "ColaTableFootMore.h"
 
 @interface ColaBaseTableViewController ()
 <UITableViewDelegate,
@@ -20,8 +23,68 @@ UITableViewDataSource>
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    if (@available(iOS 11.0, *)) {
+        self.listTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     //  当前列表请求的分页数，默认为1
     _currentPage = 1;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////         UITableView添加下拉刷新和上拉加载动画         //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)setHasPullDownRefresh:(BOOL)hasPullDownRefresh
+{
+    _hasPullDownRefresh = hasPullDownRefresh;
+    if (hasPullDownRefresh) {
+        ColaTableHeadRefresh *refreshHeader = [ColaTableHeadRefresh headerWithRefreshingTarget:self refreshingAction:@selector(pullDownRefreshData)];
+        _listTable.mj_header = refreshHeader;
+    } else {
+        _listTable.mj_header = nil;
+    }
+}
+- (void)setHasPullUpLoadMore:(BOOL)hasPullUpLoadMore
+{
+    _hasPullUpLoadMore = hasPullUpLoadMore;
+    if (hasPullUpLoadMore) {
+        ColaTableFootMore *moreFooter = [ColaTableFootMore footerWithRefreshingTarget:self refreshingAction:@selector(pullUpMoreData)];
+        _listTable.mj_footer = moreFooter;
+    } else {
+        _listTable.mj_footer = nil;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////               下拉刷新/上拉加载/数据请求方法               //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)pullDownRefreshData
+{
+    _currentPage = 1;
+    _pullStatus = ColaBaseTablePullStatusRefresh;
+    [_listTable.mj_footer resetNoMoreData];
+    [self requestListData];
+}
+- (void)pullUpMoreData
+{
+    _currentPage++;
+    _pullStatus = ColaBaseTablePullStatusMoreData;
+    [self requestListData];
+}
+- (void)requestListData
+{
+    NSLog(@"子类未实现列表数据获取方法");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////            列表停止加载：停止列表上拉/下载动画           //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)tableEndLoading
+{
+    [_listTable.mj_footer endRefreshing];
+    [_listTable.mj_header endRefreshing];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -69,6 +132,21 @@ UITableViewDataSource>
         _listTableData = [NSMutableArray arrayWithCapacity:0];
     }
     return _listTableData;
+}
+- (UITableView*)listTable
+{
+    if (!_listTable) {
+        _listTable = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _listTable.delegate = self;
+        _listTable.dataSource = self;
+        _listTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _listTable.backgroundColor = [UIColor whiteColor];
+        _listTable.userInteractionEnabled = YES;
+        _listTable.showsVerticalScrollIndicator = NO;
+        _listTable.showsHorizontalScrollIndicator = NO;
+        [self.view addSubview:_listTable];
+    }
+    return _listTable;
 }
 
 - (void)didReceiveMemoryWarning {

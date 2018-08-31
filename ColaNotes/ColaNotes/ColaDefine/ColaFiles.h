@@ -17,13 +17,18 @@
 #import "ColaBaseTableViewController.h"
 #import "ColaBaseTableViewCell.h"
 
+///////////   工具类/自定义控件类引用   ///////////
+#import "ColaDeviceInfo.h"
+
 //////////////////   扩展类引用   //////////////////
 #import "UIImage+Category.h"
 #import "NSString+Category.h"
 #import "UILabel+Category.h"
 #import "UIButton+Position.h"
 #import "UIButton+Category.h"
+#import "UIView+Category.h"
 
 //////////////   手动导入第三方引用   /////////////
 
-
+//////////////   Pod导入第三方引用   /////////////
+#import "Masonry.h"

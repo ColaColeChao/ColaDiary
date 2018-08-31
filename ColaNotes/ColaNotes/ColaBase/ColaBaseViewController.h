@@ -10,6 +10,13 @@
 
 @interface ColaBaseViewController : UIViewController
 
+/** self.view的起始y坐标 */
+@property (nonatomic, assign) CGFloat originalY;
+/** 带有导航栏和Tabbar的视图总高度 */
+@property (nonatomic, assign) CGFloat mainViewHeight;
+/** D哎呦导航栏的视图总高度 */
+@property (nonatomic, assign) CGFloat subViewheight;
+
 /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////                        自定义导航栏部分                           //////////////////
 //////////////////            可自定义导航栏颜色、图片、渐变色               //////////////////
@@ -75,6 +82,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 - (void)leftNavBarButtonAction:(UIButton*)sender;
 - (void)rightNavBarButtonAction:(UIButton*)sender;
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////                     返回上一级ViewController                 //////////////////
+//////////////////                     返回根视图ViewController                 //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)popToLastViewController;
+- (void)popToRootViewController;
 
 
 @end

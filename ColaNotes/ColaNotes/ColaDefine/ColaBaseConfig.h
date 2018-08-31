@@ -20,3 +20,8 @@
 #define Cola_NavBarDefaultFont [UIFont systemFontOfSize:14.f]
 /** 导航栏上左右自定义按钮的字体颜色 */
 #define Cola_NavBarDefaultColor [UIColor whiteColor]
+
+/** 自定义UITableViewCell底部分割线高度 */
+#define Cola_CellSeparatorDefaultHeight .5
+/** 自定义UITableViewCell底部分割线颜色 */
+#define Cola_CellSeparatorDefaultColor [UIColor lightGrayColor]

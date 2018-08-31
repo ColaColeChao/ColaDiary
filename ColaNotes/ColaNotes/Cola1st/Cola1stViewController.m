@@ -23,7 +23,6 @@
     
     //  设置导航栏为自定义的渐变颜色
     [self setNavItemBackgroundColor:ColaHex(0x89B9DE)];
-    
 }
 
 - (void)didReceiveMemoryWarning {

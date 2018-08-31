@@ -27,6 +27,35 @@
     // Do any additional setup after loading the view.
     
     [self setNavItemBackgroundColor:Cola_NavItemDefaultBackgroundColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    if (self.navigationController.viewControllers.count > 1) {
+        [self setLeftNavImageName:@"cola_bar_back"];
+        [self.leftNavBarButton removeTarget:self action:@selector(leftNavBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self.leftNavBarButton addTarget:self action:@selector(popToLastViewController) forControlEvents:UIControlEventTouchUpInside];
+    }
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+/** self.view的起始y坐标 */
+- (CGFloat)originalY
+{
+    return Cola_NavStatusBarHeight;
+}
+/** 带有导航栏和Tabbar的视图总高度 */
+- (CGFloat)mainViewHeight
+{
+    float deviceHeight = Cola_Height;
+    float navStatusBarHeight = Cola_NavStatusBarHeight;
+    float tabbarHeight = Cola_TabbarHeight;
+    float tabbarSafeAreaHeight = Cola_TabbarSafeHeight;
+    return deviceHeight - navStatusBarHeight - tabbarHeight - tabbarSafeAreaHeight;
+}
+/** D哎呦导航栏的视图总高度 */
+- (CGFloat)subViewheight
+{
+    float deviceHeight = Cola_Height;
+    float navStatusBarHeight = Cola_NavStatusBarHeight;
+    return deviceHeight - navStatusBarHeight;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -217,6 +246,19 @@
 - (void)setRightNavImageView:(UIImageView*)imageView
 {
     [self setRightNavImage:imageView.image];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////                     返回上一级ViewController                 //////////////////
+//////////////////                     返回根视图ViewController                 //////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+- (void)popToLastViewController
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)popToRootViewController
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////

@@ -6,8 +6,8 @@
 //  Copyright © 2018年 可乐超. All rights reserved.
 //
 
-#import "ColaBaseViewController.h"
+#import "ColaBaseTableViewController.h"
 
-@interface Cola1stViewController : ColaBaseViewController
+@interface Cola1stViewController : ColaBaseTableViewController
 
 @end

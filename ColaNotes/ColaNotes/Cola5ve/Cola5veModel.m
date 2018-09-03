@@ -23,6 +23,10 @@
     model2.title = @"炸开特效";
     model2.icon = @"cola_5ve_click_bomb";
     [fiveArray addObject:model2];
+    Cola5veModel *model3 = [Cola5veModel new];
+    model3.title = @"下雪效果";
+    model3.icon = @"cola_5ve_click_snow";
+    [fiveArray addObject:model3];
     return fiveArray;
 }
 @end

@@ -20,6 +20,8 @@
 @property (nonatomic, assign) CGFloat height;
 /** UIView的右边frame值 */
 @property (nonatomic, assign) CGFloat right;
+/** UIView的底部frame值 */
+@property (nonatomic, assign) CGFloat bottom;
 /** UIView的size值 */
 @property (nonatomic, assign) CGSize size;
 /** UIView的origin值 */

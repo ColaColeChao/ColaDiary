@@ -7,6 +7,9 @@
 //
 
 #import "Cola4urViewController.h"
+#import "Cola4urModel.h"
+#import "Cola4urCell.h"
+#import "ColaAlbumViewController.h"
 
 @interface Cola4urViewController ()
 
@@ -23,6 +26,54 @@
     
     //  设置导航栏为自定义的渐变颜色
     [self setNavItemBackgroundStartColor:ColaHex(0xB9E9CE) endColor:ColaHex(0xBDE7DA)];
+    
+    //  设置UITableView的frame值，不设置则为默认的CGRectZero
+    self.listTable.frame = CGRectMake(0, self.originalY, Cola_Width, self.mainViewHeight);
+    
+    [self setTableViewDataSource];
+    [self.listTable reloadData];
+}
+
+#pragma mark -
+#pragma mark - 设置列表数据源
+- (void)setTableViewDataSource
+{
+    [self.listTableData removeAllObjects];
+    [self.listTableData addObjectsFromArray:[Cola4urModel fourTableListData]];
+}
+
+#pragma mark -
+#pragma mark - UITableView的代理方法及数据源代理方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.listTableData.count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80.f;
+}
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Cola4urCell *cell = [tableView dequeueReusableCellWithIdentifier:ColaIdentifiers(Cola4urCell)];
+    if (!cell) {
+        cell = [[Cola4urCell alloc] initWithReuseIdentifier:ColaIdentifiers(Cola4urCell)];
+    }
+    [cell loadCellData:self.listTableData[indexPath.row]];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            {
+                ColaAlbumViewController *albumVc = [[ColaAlbumViewController alloc] init];
+                [self.navigationController pushViewController:albumVc animated:YES];
+            }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

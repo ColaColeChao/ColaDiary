@@ -11,6 +11,7 @@
 #import "Cola5veModel.h"
 #import "ColaDeviceInfoViewController.h"
 #import "ColaBombViewController.h"
+#import "ColaSnowViewController.h"
 
 @interface Cola5veViewController ()
 
@@ -27,6 +28,7 @@
     
     //  设置导航栏为自定义的渐变颜色
     [self setNavItemBackgroundColor:ColaHex(0xCB89DE)];
+    
     //  设置UITableView的frame值，不设置则为默认的CGRectZero
     self.listTable.frame = CGRectMake(0, self.originalY, Cola_Width, self.mainViewHeight);
     
@@ -74,6 +76,12 @@
         {
             ColaBombViewController *bombVc = [[ColaBombViewController alloc] init];
             [self.navigationController pushViewController:bombVc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            ColaSnowViewController *snowVc = [[ColaSnowViewController alloc] init];
+            [self.navigationController pushViewController:snowVc animated:YES];
         }
             break;
         default:

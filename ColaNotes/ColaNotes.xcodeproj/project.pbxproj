@@ -17,6 +17,11 @@
 		FA10178921368941006AC1D7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178821368941006AC1D7 /* UILabel+Category.m */; };
 		FA10178C21368CD7006AC1D7 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178B21368CD7006AC1D7 /* NSString+Category.m */; };
 		FA10178F21369947006AC1D7 /* ColaTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178E21369947006AC1D7 /* ColaTabViewController.m */; };
+		FA45DD23213CE0BE00BC0954 /* ColaSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD22213CE0BE00BC0954 /* ColaSnowViewController.m */; };
+		FA45DD26213CE3B000BC0954 /* ColaSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD25213CE3B000BC0954 /* ColaSnowView.m */; };
+		FA45DD29213CE88900BC0954 /* Cola4urModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD28213CE88900BC0954 /* Cola4urModel.m */; };
+		FA45DD2C213D0C7500BC0954 /* Cola4urCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD2B213D0C7500BC0954 /* Cola4urCell.m */; };
+		FA45DD30213D160A00BC0954 /* ColaAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD2F213D160A00BC0954 /* ColaAlbumViewController.m */; };
 		FA4E3F38212C157E0033ABF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F33212C157E0033ABF8 /* AppDelegate.m */; };
 		FA4E3F40212C15BD0033ABF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4E3F3B212C15BD0033ABF8 /* Assets.xcassets */; };
 		FA4E3F42212C15BD0033ABF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F3E212C15BD0033ABF8 /* main.m */; };
@@ -66,6 +71,16 @@
 		FA10178B21368CD7006AC1D7 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		FA10178D21369947006AC1D7 /* ColaTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTabViewController.h; sourceTree = "<group>"; };
 		FA10178E21369947006AC1D7 /* ColaTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaTabViewController.m; sourceTree = "<group>"; };
+		FA45DD21213CE0BE00BC0954 /* ColaSnowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaSnowViewController.h; sourceTree = "<group>"; };
+		FA45DD22213CE0BE00BC0954 /* ColaSnowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaSnowViewController.m; sourceTree = "<group>"; };
+		FA45DD24213CE3B000BC0954 /* ColaSnowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaSnowView.h; sourceTree = "<group>"; };
+		FA45DD25213CE3B000BC0954 /* ColaSnowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaSnowView.m; sourceTree = "<group>"; };
+		FA45DD27213CE88900BC0954 /* Cola4urModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola4urModel.h; sourceTree = "<group>"; };
+		FA45DD28213CE88900BC0954 /* Cola4urModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cola4urModel.m; sourceTree = "<group>"; };
+		FA45DD2A213D0C7500BC0954 /* Cola4urCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola4urCell.h; sourceTree = "<group>"; };
+		FA45DD2B213D0C7500BC0954 /* Cola4urCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cola4urCell.m; sourceTree = "<group>"; };
+		FA45DD2E213D160A00BC0954 /* ColaAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaAlbumViewController.h; sourceTree = "<group>"; };
+		FA45DD2F213D160A00BC0954 /* ColaAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaAlbumViewController.m; sourceTree = "<group>"; };
 		FA4E3F1A212C11180033ABF8 /* ColaNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColaNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4E3F2E212C157E0033ABF8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA4E3F33212C157E0033ABF8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +181,26 @@
 				FA9813C6213967FB000ACB87 /* UIImageView+Bomb.m */,
 			);
 			path = ColaCategory;
+			sourceTree = "<group>";
+		};
+		FA45DD20213CE0A800BC0954 /* ColaSnow(下雪效果) */ = {
+			isa = PBXGroup;
+			children = (
+				FA45DD21213CE0BE00BC0954 /* ColaSnowViewController.h */,
+				FA45DD22213CE0BE00BC0954 /* ColaSnowViewController.m */,
+				FA45DD24213CE3B000BC0954 /* ColaSnowView.h */,
+				FA45DD25213CE3B000BC0954 /* ColaSnowView.m */,
+			);
+			path = "ColaSnow(下雪效果)";
+			sourceTree = "<group>";
+		};
+		FA45DD2D213D15EE00BC0954 /* ColaAlbum(获取全部照片) */ = {
+			isa = PBXGroup;
+			children = (
+				FA45DD2E213D160A00BC0954 /* ColaAlbumViewController.h */,
+				FA45DD2F213D160A00BC0954 /* ColaAlbumViewController.m */,
+			);
+			path = "ColaAlbum(获取全部照片)";
 			sourceTree = "<group>";
 		};
 		FA4E3F11212C11180033ABF8 = {
@@ -304,8 +339,13 @@
 		FAB1A17121354CFA004F1A14 /* Cola4ur */ = {
 			isa = PBXGroup;
 			children = (
+				FA45DD2D213D15EE00BC0954 /* ColaAlbum(获取全部照片) */,
 				FA10177A21364538006AC1D7 /* Cola4urViewController.h */,
 				FA10177B21364538006AC1D7 /* Cola4urViewController.m */,
+				FA45DD27213CE88900BC0954 /* Cola4urModel.h */,
+				FA45DD28213CE88900BC0954 /* Cola4urModel.m */,
+				FA45DD2A213D0C7500BC0954 /* Cola4urCell.h */,
+				FA45DD2B213D0C7500BC0954 /* Cola4urCell.m */,
 			);
 			path = Cola4ur;
 			sourceTree = "<group>";
@@ -313,6 +353,7 @@
 		FAB1A17221354CFA004F1A14 /* Cola5ve */ = {
 			isa = PBXGroup;
 			children = (
+				FA45DD20213CE0A800BC0954 /* ColaSnow(下雪效果) */,
 				FA9813BC2139593C000ACB87 /* ColaClickBomb(炸开特效) */,
 				FA9813B2213940A6000ACB87 /* ColaDeviceInfos(获取设备信息) */,
 				FA10177D21364543006AC1D7 /* Cola5veViewController.h */,
@@ -465,11 +506,15 @@
 				FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */,
 				FA10178C21368CD7006AC1D7 /* NSString+Category.m in Sources */,
 				FA9813BF2139594D000ACB87 /* ColaBombViewController.m in Sources */,
+				FA45DD26213CE3B000BC0954 /* ColaSnowView.m in Sources */,
 				FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */,
 				FAA5EADC21379BC600FDACA5 /* UIButton+Position.m in Sources */,
 				FA4E3F42212C15BD0033ABF8 /* main.m in Sources */,
+				FA45DD23213CE0BE00BC0954 /* ColaSnowViewController.m in Sources */,
 				FA9813B5213940BA000ACB87 /* ColaDeviceInfoViewController.m in Sources */,
+				FA45DD30213D160A00BC0954 /* ColaAlbumViewController.m in Sources */,
 				FA9813C7213967FB000ACB87 /* UIImageView+Bomb.m in Sources */,
+				FA45DD29213CE88900BC0954 /* Cola4urModel.m in Sources */,
 				FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */,
 				FA10177C21364538006AC1D7 /* Cola4urViewController.m in Sources */,
 				FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */,
@@ -482,6 +527,7 @@
 				FA10178921368941006AC1D7 /* UILabel+Category.m in Sources */,
 				FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */,
 				FA4E3F38212C157E0033ABF8 /* AppDelegate.m in Sources */,
+				FA45DD2C213D0C7500BC0954 /* Cola4urCell.m in Sources */,
 				FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */,
 				FA10178621367FF2006AC1D7 /* UIImage+Category.m in Sources */,
 				FA9813C421396256000ACB87 /* ColaBombImageView.m in Sources */,

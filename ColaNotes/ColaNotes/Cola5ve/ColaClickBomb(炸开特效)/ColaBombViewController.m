@@ -24,12 +24,13 @@
     //  设置导航栏为自定义的渐变颜色
     [self setNavItemBackgroundColor:ColaHex(0xCB89DE)];
     
-    ColaBombImageView *bombImageView = [[ColaBombImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    bombImageView.userInteractionEnabled = YES;
-    bombImageView.center = self.view.center;
-    [self.view addSubview:bombImageView];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageViewBomb:)];
-    [bombImageView addGestureRecognizer:tap];
+    for (int i=0; i<3; i++) {
+        ColaBombImageView *bombImageView = [[ColaBombImageView alloc] initWithFrame:[self randomRect]];
+        bombImageView.userInteractionEnabled = YES;
+        [self.view addSubview:bombImageView];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageViewBomb:)];
+        [bombImageView addGestureRecognizer:tap];
+    }
 }
 
 #pragma mark -
@@ -39,13 +40,22 @@
     UIImageView *imageView = (UIImageView*)tap.view;
     [imageView bombomb];
     [imageView removeFromSuperview];
+    
+    ColaBombImageView *bombImageView = [[ColaBombImageView alloc] initWithFrame:[self randomRect]];
+    bombImageView.userInteractionEnabled = YES;
+    [self.view addSubview:bombImageView];
+    UITapGestureRecognizer *randomTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageViewBomb:)];
+    [bombImageView addGestureRecognizer:randomTap];
 }
 
 #pragma mark -
 #pragma mark - 生成随机坐标
 - (CGRect)randomRect
 {
-    return CGRectZero;
+    int height = self.view.frame.size.height - self.originalY - 100;
+    int y = self.originalY +  (arc4random() % height);
+    int x = arc4random() % (int) (self.view.frame.size.width-100);
+    return CGRectMake(x, y, 100, 100);
 }
 
 - (void)didReceiveMemoryWarning {

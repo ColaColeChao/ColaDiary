@@ -16,6 +16,7 @@
 #pragma mark - 图片炸开特效
  - (void)bombomb
 {
+    //  炸开的小星星数量可以自己定义
     NSArray *images = @[
                         @"ColaBombImages.bundle/icon_star01",
                         @"ColaBombImages.bundle/icon_star02",

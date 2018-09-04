@@ -9,6 +9,7 @@
 #import "ColaAlbumViewController.h"
 #import <Photos/Photos.h>
 
+
 @interface ColaAlbumViewController ()
 
 @end
@@ -25,18 +26,30 @@
     [self setNavItemBackgroundStartColor:ColaHex(0xB9E9CE) endColor:ColaHex(0xBDE7DA)];
     
     [self setRightNavTitle:@"获取"];
-    
-    [self getPhoneAllPhotos];
 }
 
 #pragma mark -
 #pragma mark - 获取手机全部照片+视频
-- (void)getPhoneAllPhotos
+- (void)rightNavBarButtonAction:(UIButton *)sender
 {
-    __Cola_weakSelf(weak);
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-    });
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        switch (status) {
+            case PHAuthorizationStatusAuthorized:
+                NSLog(@"用户已授权");
+                break;
+            case PHAuthorizationStatusDenied:
+                NSLog(@"禁止使用");
+                break;
+            case PHAuthorizationStatusRestricted:
+                NSLog(@"其他原因造成的无权限使用");
+                break;
+            case PHAuthorizationStatusNotDetermined:
+                NSLog(@"用户未授权");
+                break;
+            default:
+                break;
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

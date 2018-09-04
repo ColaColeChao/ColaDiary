@@ -27,6 +27,7 @@
 		FA4E3F42212C15BD0033ABF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F3E212C15BD0033ABF8 /* main.m */; };
 		FA4E3F46212C17AF0033ABF8 /* ColaBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F45212C17AF0033ABF8 /* ColaBaseViewController.m */; };
 		FA4E3F49212C17C60033ABF8 /* ColaNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */; };
+		FA737956213E69F40029EEFC /* ColaAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA737955213E69F40029EEFC /* ColaAlert.m */; };
 		FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A421391FE4000ACB87 /* ColaBaseModel.m */; };
 		FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A921392511000ACB87 /* ColaDeviceInfo.m */; };
 		FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813AD213939E4000ACB87 /* Cola5veCell.m */; };
@@ -91,6 +92,8 @@
 		FA4E3F45212C17AF0033ABF8 /* ColaBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseViewController.m; sourceTree = "<group>"; };
 		FA4E3F47212C17C60033ABF8 /* ColaNavBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaNavBaseViewController.h; sourceTree = "<group>"; };
 		FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaNavBaseViewController.m; sourceTree = "<group>"; };
+		FA737954213E69F40029EEFC /* ColaAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaAlert.h; sourceTree = "<group>"; };
+		FA737955213E69F40029EEFC /* ColaAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColaAlert.m; sourceTree = "<group>"; };
 		FA9813A321391FE4000ACB87 /* ColaBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseModel.h; sourceTree = "<group>"; };
 		FA9813A421391FE4000ACB87 /* ColaBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseModel.m; sourceTree = "<group>"; };
 		FA9813A821392511000ACB87 /* ColaDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaDeviceInfo.h; sourceTree = "<group>"; };
@@ -277,6 +280,15 @@
 			path = ColaResources;
 			sourceTree = "<group>";
 		};
+		FA737953213E69F40029EEFC /* ColaAlert(自定义弹出框) */ = {
+			isa = PBXGroup;
+			children = (
+				FA737954213E69F40029EEFC /* ColaAlert.h */,
+				FA737955213E69F40029EEFC /* ColaAlert.m */,
+			);
+			path = "ColaAlert(自定义弹出框)";
+			sourceTree = "<group>";
+		};
 		FA9813A6213924D6000ACB87 /* ColaTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +302,7 @@
 		FA9813A7213924D6000ACB87 /* ColaUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				FA737953213E69F40029EEFC /* ColaAlert(自定义弹出框) */,
 			);
 			path = ColaUIKit;
 			sourceTree = "<group>";
@@ -505,6 +518,7 @@
 				FA10177621364521006AC1D7 /* Cola2ndViewController.m in Sources */,
 				FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */,
 				FA10178C21368CD7006AC1D7 /* NSString+Category.m in Sources */,
+				FA737956213E69F40029EEFC /* ColaAlert.m in Sources */,
 				FA9813BF2139594D000ACB87 /* ColaBombViewController.m in Sources */,
 				FA45DD26213CE3B000BC0954 /* ColaSnowView.m in Sources */,
 				FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */,

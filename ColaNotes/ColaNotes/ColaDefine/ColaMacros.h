@@ -26,7 +26,7 @@
 #define Cola_TabbarSafeHeight [[UIApplication sharedApplication] statusBarFrame].size.height == 44.f ? 34.f : 0.f
 
 /** 弱引用声明 */
-#define __Cola_weakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self
+#define __ColaWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self
 
 /** 16进制颜色值转换成UIColor */
 #define ColaHex(value) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0x00FF00) >> 8))/255.0 blue:((float)(value & 0x0000FF))/255.0 alpha:1.f]

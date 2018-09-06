@@ -19,6 +19,7 @@
 
 ///////////   工具类/自定义控件类引用   ///////////
 #import "ColaDeviceInfo.h"
+#import "ColaAlert.h"
 
 //////////////////   扩展类引用   //////////////////
 #import "UIImage+Category.h"

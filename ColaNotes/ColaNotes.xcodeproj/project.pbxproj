@@ -47,6 +47,7 @@
 		FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */; };
 		FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */; };
 		FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */; };
+		FAB5DE7F215E3A85001C6C50 /* NSArrayCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */; };
 		FAD2A5982138DDF30090EF1E /* ColaTableHeadRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */; };
 		FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59A2138DE070090EF1E /* ColaTableFootMore.m */; };
 		FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59D2138E46B0090EF1E /* UIView+Category.m */; };
@@ -141,6 +142,8 @@
 		FAB1A17921354E7B004F1A14 /* ColaFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaFiles.h; sourceTree = "<group>"; };
 		FAB2890B215E23700040D3A5 /* ColaArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaArrayViewController.h; sourceTree = "<group>"; };
 		FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaArrayViewController.m; sourceTree = "<group>"; };
+		FAB5DE7D215E3A85001C6C50 /* NSArrayCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayCrash.h; sourceTree = "<group>"; };
+		FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayCrash.m; sourceTree = "<group>"; };
 		FAD2A5962138DDF30090EF1E /* ColaTableHeadRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableHeadRefresh.h; sourceTree = "<group>"; };
 		FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaTableHeadRefresh.m; sourceTree = "<group>"; };
 		FAD2A5992138DE070090EF1E /* ColaTableFootMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableFootMore.h; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				FA9813AB21392680000ACB87 /* ColaDeviceConst.h */,
 				FA9813A821392511000ACB87 /* ColaDeviceInfo.h */,
 				FA9813A921392511000ACB87 /* ColaDeviceInfo.m */,
+				FAB5DE7D215E3A85001C6C50 /* NSArrayCrash.h */,
+				FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */,
 			);
 			path = ColaTool;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				FA10177321364516006AC1D7 /* Cola1stViewController.m in Sources */,
 				FA10178921368941006AC1D7 /* UILabel+Category.m in Sources */,
 				FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */,
+				FAB5DE7F215E3A85001C6C50 /* NSArrayCrash.m in Sources */,
 				FA4E3F38212C157E0033ABF8 /* AppDelegate.m in Sources */,
 				FA45DD2C213D0C7500BC0954 /* Cola4urCell.m in Sources */,
 				FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */,

@@ -35,6 +35,9 @@ UICollectionViewDelegateFlowLayout>
     [self.view addSubview:self.mainCollectionView];
     
     [self.mainCollectionView registerClass:[Cola1stCell class] forCellWithReuseIdentifier:ColaIdentifiers(Cola1stCell)];
+    
+    NSArray *array = @[@"1",@"2"];
+    NSLog(@"[%@]",[array objectAtIndex:4]);
 }
 
 #pragma mark -

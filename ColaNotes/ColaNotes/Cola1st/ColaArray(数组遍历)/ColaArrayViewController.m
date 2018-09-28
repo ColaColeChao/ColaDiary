@@ -18,11 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
-    for (int i=0; i<9000000; i++) {
+    for (int i=0; i<90000; i++) {
         [array addObject:ColaString(@"%d",i)];
     }
     NSInteger count = array.count;
-    
     
     //  1. 并行队列，迭代遍历数组
     NSLog(@"并行队列迭代开始[%f]",[[NSDate date] timeIntervalSince1970]*1000);
@@ -64,10 +63,10 @@
     
     //  6. 匹配遍历查询
     NSArray *data = @[
-                      @{@"a":@"1",@"b":@"abc",@"c":@"123"},
-                      @{@"a":@"2",@"b":@"dcf",@"c":@"456"},
-                      @{@"a":@"6",@"b":@"ghi",@"c":@"789"},
-                      @{@"a":@"1",@"b":@"jkl",@"c":@"101"},
+                                    @{@"a":@"1",@"b":@"abc",@"c":@"123"},
+                                    @{@"a":@"2",@"b":@"dcf",@"c":@"456"},
+                                    @{@"a":@"6",@"b":@"ghi",@"c":@"789"},
+                                    @{@"a":@"1",@"b":@"jkl",@"c":@"101"},
                                 ];
     NSLog(@"匹配遍历开始[%f]",[[NSDate date] timeIntervalSince1970]*1000);
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"a == '1'"];

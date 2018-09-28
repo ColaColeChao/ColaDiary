@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B944DB718FAEECB5AAA9750C /* libPods-ColaNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */; };
+		FA0449BC21476021009486A2 /* ColaScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0449BB21476021009486A2 /* ColaScanView.m */; };
 		FA10177321364516006AC1D7 /* Cola1stViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10177221364516006AC1D7 /* Cola1stViewController.m */; };
 		FA10177621364521006AC1D7 /* Cola2ndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10177521364521006AC1D7 /* Cola2ndViewController.m */; };
 		FA1017792136452D006AC1D7 /* Cola3rdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1017782136452D006AC1D7 /* Cola3rdViewController.m */; };
@@ -28,6 +29,8 @@
 		FA4E3F46212C17AF0033ABF8 /* ColaBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F45212C17AF0033ABF8 /* ColaBaseViewController.m */; };
 		FA4E3F49212C17C60033ABF8 /* ColaNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */; };
 		FA737956213E69F40029EEFC /* ColaAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA737955213E69F40029EEFC /* ColaAlert.m */; };
+		FA8B98DC214646DC0076E8F6 /* Cola1stCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B98DB214646DC0076E8F6 /* Cola1stCell.m */; };
+		FA8B98E7214665650076E8F6 /* ColaScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B98E6214665650076E8F6 /* ColaScanViewController.m */; };
 		FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A421391FE4000ACB87 /* ColaBaseModel.m */; };
 		FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A921392511000ACB87 /* ColaDeviceInfo.m */; };
 		FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813AD213939E4000ACB87 /* Cola5veCell.m */; };
@@ -43,6 +46,7 @@
 		FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EADE21379F5E00FDACA5 /* UIButton+Category.m */; };
 		FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */; };
 		FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */; };
+		FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */; };
 		FAD2A5982138DDF30090EF1E /* ColaTableHeadRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */; };
 		FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59A2138DE070090EF1E /* ColaTableFootMore.m */; };
 		FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59D2138E46B0090EF1E /* UIView+Category.m */; };
@@ -53,6 +57,8 @@
 		333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColaNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD34AB24F82EB664CD29D4B /* Pods-ColaNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColaNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColaNotes/Pods-ColaNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		C91358272DA008B8884F3654 /* Pods-ColaNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColaNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColaNotes/Pods-ColaNotes.release.xcconfig"; sourceTree = "<group>"; };
+		FA0449BA21476021009486A2 /* ColaScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaScanView.h; sourceTree = "<group>"; };
+		FA0449BB21476021009486A2 /* ColaScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaScanView.m; sourceTree = "<group>"; };
 		FA10177121364516006AC1D7 /* Cola1stViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola1stViewController.h; sourceTree = "<group>"; };
 		FA10177221364516006AC1D7 /* Cola1stViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cola1stViewController.m; sourceTree = "<group>"; };
 		FA10177421364521006AC1D7 /* Cola2ndViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola2ndViewController.h; sourceTree = "<group>"; };
@@ -94,6 +100,12 @@
 		FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaNavBaseViewController.m; sourceTree = "<group>"; };
 		FA737954213E69F40029EEFC /* ColaAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaAlert.h; sourceTree = "<group>"; };
 		FA737955213E69F40029EEFC /* ColaAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColaAlert.m; sourceTree = "<group>"; };
+		FA8B98DA214646DC0076E8F6 /* Cola1stCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola1stCell.h; sourceTree = "<group>"; };
+		FA8B98DB214646DC0076E8F6 /* Cola1stCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cola1stCell.m; sourceTree = "<group>"; };
+		FA8B98E12146587E0076E8F6 /* ColaNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColaNotes.entitlements; sourceTree = "<group>"; };
+		FA8B98E2214658960076E8F6 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		FA8B98E5214665650076E8F6 /* ColaScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaScanViewController.h; sourceTree = "<group>"; };
+		FA8B98E6214665650076E8F6 /* ColaScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaScanViewController.m; sourceTree = "<group>"; };
 		FA9813A321391FE4000ACB87 /* ColaBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseModel.h; sourceTree = "<group>"; };
 		FA9813A421391FE4000ACB87 /* ColaBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseModel.m; sourceTree = "<group>"; };
 		FA9813A821392511000ACB87 /* ColaDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaDeviceInfo.h; sourceTree = "<group>"; };
@@ -127,6 +139,8 @@
 		FAB1A17521354D3F004F1A14 /* ColaMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaMacros.h; sourceTree = "<group>"; };
 		FAB1A17721354E02004F1A14 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FAB1A17921354E7B004F1A14 /* ColaFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaFiles.h; sourceTree = "<group>"; };
+		FAB2890B215E23700040D3A5 /* ColaArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaArrayViewController.h; sourceTree = "<group>"; };
+		FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaArrayViewController.m; sourceTree = "<group>"; };
 		FAD2A5962138DDF30090EF1E /* ColaTableHeadRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableHeadRefresh.h; sourceTree = "<group>"; };
 		FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaTableHeadRefresh.m; sourceTree = "<group>"; };
 		FAD2A5992138DE070090EF1E /* ColaTableFootMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableFootMore.h; sourceTree = "<group>"; };
@@ -160,6 +174,7 @@
 		A88EA392364ED54FB507A42E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA8B98E2214658960076E8F6 /* CoreNFC.framework */,
 				333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */,
 			);
 			name = Frameworks;
@@ -227,6 +242,7 @@
 		FA4E3F1C212C11180033ABF8 /* ColaNotes */ = {
 			isa = PBXGroup;
 			children = (
+				FA8B98E12146587E0076E8F6 /* ColaNotes.entitlements */,
 				FAB1A17421354D16004F1A14 /* ColaDefine */,
 				FA4E3F2D212C157E0033ABF8 /* ColaBase */,
 				FAB1A16F21354CF9004F1A14 /* Cola1st */,
@@ -289,6 +305,17 @@
 			path = "ColaAlert(自定义弹出框)";
 			sourceTree = "<group>";
 		};
+		FA8B98E42146655B0076E8F6 /* ColaScan(扫一扫) */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B98E5214665650076E8F6 /* ColaScanViewController.h */,
+				FA8B98E6214665650076E8F6 /* ColaScanViewController.m */,
+				FA0449BA21476021009486A2 /* ColaScanView.h */,
+				FA0449BB21476021009486A2 /* ColaScanView.m */,
+			);
+			path = "ColaScan(扫一扫)";
+			sourceTree = "<group>";
+		};
 		FA9813A6213924D6000ACB87 /* ColaTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,8 +361,12 @@
 		FAB1A16F21354CF9004F1A14 /* Cola1st */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2890A215E235E0040D3A5 /* ColaArray(数组遍历) */,
+				FA8B98E42146655B0076E8F6 /* ColaScan(扫一扫) */,
 				FA10177121364516006AC1D7 /* Cola1stViewController.h */,
 				FA10177221364516006AC1D7 /* Cola1stViewController.m */,
+				FA8B98DA214646DC0076E8F6 /* Cola1stCell.h */,
+				FA8B98DB214646DC0076E8F6 /* Cola1stCell.m */,
 			);
 			path = Cola1st;
 			sourceTree = "<group>";
@@ -398,6 +429,15 @@
 			path = ColaDefine;
 			sourceTree = "<group>";
 		};
+		FAB2890A215E235E0040D3A5 /* ColaArray(数组遍历) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2890B215E23700040D3A5 /* ColaArrayViewController.h */,
+				FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */,
+			);
+			path = "ColaArray(数组遍历)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +471,11 @@
 				TargetAttributes = {
 					FA4E3F19212C11180033ABF8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -509,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0449BC21476021009486A2 /* ColaScanView.m in Sources */,
 				FA1017792136452D006AC1D7 /* Cola3rdViewController.m in Sources */,
 				FA9813B121393AA1000ACB87 /* Cola5veModel.m in Sources */,
 				FAD2A5982138DDF30090EF1E /* ColaTableHeadRefresh.m in Sources */,
@@ -527,11 +573,13 @@
 				FA45DD23213CE0BE00BC0954 /* ColaSnowViewController.m in Sources */,
 				FA9813B5213940BA000ACB87 /* ColaDeviceInfoViewController.m in Sources */,
 				FA45DD30213D160A00BC0954 /* ColaAlbumViewController.m in Sources */,
+				FA8B98E7214665650076E8F6 /* ColaScanViewController.m in Sources */,
 				FA9813C7213967FB000ACB87 /* UIImageView+Bomb.m in Sources */,
 				FA45DD29213CE88900BC0954 /* Cola4urModel.m in Sources */,
 				FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */,
 				FA10177C21364538006AC1D7 /* Cola4urViewController.m in Sources */,
 				FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */,
+				FA8B98DC214646DC0076E8F6 /* Cola1stCell.m in Sources */,
 				FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */,
 				FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */,
 				FA9813B8213940DA000ACB87 /* ColaDeviceInfoCell.m in Sources */,
@@ -542,6 +590,7 @@
 				FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */,
 				FA4E3F38212C157E0033ABF8 /* AppDelegate.m in Sources */,
 				FA45DD2C213D0C7500BC0954 /* Cola4urCell.m in Sources */,
+				FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */,
 				FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */,
 				FA10178621367FF2006AC1D7 /* UIImage+Category.m in Sources */,
 				FA9813C421396256000ACB87 /* ColaBombImageView.m in Sources */,
@@ -602,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -654,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -667,17 +716,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9VN333U5CT;
+				DEVELOPMENT_TEAM = GU9P26LFAV;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ColaNotes/ColaResources/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ColaNotes/ColaResources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coldlar.ksdemo.ColaNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfctest.hot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -688,17 +739,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9VN333U5CT;
+				DEVELOPMENT_TEAM = GU9P26LFAV;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ColaNotes/ColaResources/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ColaNotes/ColaResources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coldlar.ksdemo.ColaNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfctest.hot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

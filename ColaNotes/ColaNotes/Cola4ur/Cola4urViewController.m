@@ -10,6 +10,7 @@
 #import "Cola4urModel.h"
 #import "Cola4urCell.h"
 #import "ColaAlbumViewController.h"
+#import "MJRefresh.h"
 
 @interface Cola4urViewController ()
 
@@ -29,9 +30,16 @@
     
     //  设置UITableView的frame值，不设置则为默认的CGRectZero
     self.listTable.frame = CGRectMake(0, self.originalY, Cola_Width, self.mainViewHeight);
+    self.hasPullUpLoadMore = YES;
     
     [self setTableViewDataSource];
     [self.listTable reloadData];
+}
+
+- (void)requestListData
+{
+    [self tableEndLoading];
+    [self.listTable.mj_footer endRefreshingWithNoMoreData];
 }
 
 #pragma mark -

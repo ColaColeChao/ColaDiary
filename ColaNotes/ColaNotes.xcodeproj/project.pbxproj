@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B944DB718FAEECB5AAA9750C /* libPods-ColaNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */; };
+		EFCB9AC62232701800C52F51 /* ColaHubLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCB9AC52232701800C52F51 /* ColaHubLoading.m */; };
 		FA0449BC21476021009486A2 /* ColaScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0449BB21476021009486A2 /* ColaScanView.m */; };
 		FA10177321364516006AC1D7 /* Cola1stViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10177221364516006AC1D7 /* Cola1stViewController.m */; };
 		FA10177621364521006AC1D7 /* Cola2ndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10177521364521006AC1D7 /* Cola2ndViewController.m */; };
@@ -18,6 +19,10 @@
 		FA10178921368941006AC1D7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178821368941006AC1D7 /* UILabel+Category.m */; };
 		FA10178C21368CD7006AC1D7 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178B21368CD7006AC1D7 /* NSString+Category.m */; };
 		FA10178F21369947006AC1D7 /* ColaTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA10178E21369947006AC1D7 /* ColaTabViewController.m */; };
+		FA255E2321BBA86800F2A617 /* ColaGesLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA255E2221BBA86800F2A617 /* ColaGesLockViewController.m */; };
+		FA255E2621BBACAC00F2A617 /* ColaGesLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA255E2521BBACAC00F2A617 /* ColaGesLockView.m */; };
+		FA255E2921BBB3B700F2A617 /* ColaGesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA255E2821BBB3B700F2A617 /* ColaGesButton.m */; };
+		FA394D2C2175897400495F2B /* KSBleBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA394D2B2175897400495F2B /* KSBleBaseModel.m */; };
 		FA45DD23213CE0BE00BC0954 /* ColaSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD22213CE0BE00BC0954 /* ColaSnowViewController.m */; };
 		FA45DD26213CE3B000BC0954 /* ColaSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD25213CE3B000BC0954 /* ColaSnowView.m */; };
 		FA45DD29213CE88900BC0954 /* Cola4urModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DD28213CE88900BC0954 /* Cola4urModel.m */; };
@@ -29,8 +34,14 @@
 		FA4E3F46212C17AF0033ABF8 /* ColaBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F45212C17AF0033ABF8 /* ColaBaseViewController.m */; };
 		FA4E3F49212C17C60033ABF8 /* ColaNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */; };
 		FA737956213E69F40029EEFC /* ColaAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = FA737955213E69F40029EEFC /* ColaAlert.m */; };
+		FA8687C7220027A100910EE6 /* KSVCBBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8687C6220027A100910EE6 /* KSVCBBorderLabel.m */; };
+		FA8687CA220031C400910EE6 /* KSVCBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8687C9220031C400910EE6 /* KSVCBTextField.m */; };
+		FA8687D1220041CA00910EE6 /* ColaUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8687D0220041CA00910EE6 /* ColaUIViewController.m */; };
+		FA8687D42200471D00910EE6 /* KSVCBCoinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8687D32200471D00910EE6 /* KSVCBCoinButton.m */; };
+		FA8B676321FEA55500C4B973 /* KSVCBBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B676221FEA55500C4B973 /* KSVCBBottomView.m */; };
 		FA8B98DC214646DC0076E8F6 /* Cola1stCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B98DB214646DC0076E8F6 /* Cola1stCell.m */; };
 		FA8B98E7214665650076E8F6 /* ColaScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B98E6214665650076E8F6 /* ColaScanViewController.m */; };
+		FA9146D52178624C00FD4D74 /* KSBleModelManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9146D42178624C00FD4D74 /* KSBleModelManage.m */; };
 		FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A421391FE4000ACB87 /* ColaBaseModel.m */; };
 		FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813A921392511000ACB87 /* ColaDeviceInfo.m */; };
 		FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9813AD213939E4000ACB87 /* Cola5veCell.m */; };
@@ -46,18 +57,31 @@
 		FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EADE21379F5E00FDACA5 /* UIButton+Category.m */; };
 		FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */; };
 		FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */; };
+		FAAAA8D121E766A700734C56 /* ColaShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAAA8D021E766A700734C56 /* ColaShareInstance.m */; };
 		FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */; };
-		FAB5DE7F215E3A85001C6C50 /* NSArrayCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */; };
+		FABCD54F216C87CB00045B97 /* ColaBluetoothCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FABCD54E216C87CB00045B97 /* ColaBluetoothCell.m */; };
 		FAD2A5982138DDF30090EF1E /* ColaTableHeadRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */; };
 		FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59A2138DE070090EF1E /* ColaTableFootMore.m */; };
 		FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD2A59D2138E46B0090EF1E /* UIView+Category.m */; };
 		FAD2A5A82138EE390090EF1E /* ColaRefreshImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAD2A5A72138EE390090EF1E /* ColaRefreshImages.bundle */; };
+		FAD56A922176DAC40075506A /* ColdlerCoinBaseInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAD56A912176DAC40075506A /* ColdlerCoinBaseInfo.plist */; };
+		FAD56A95217713EA0075506A /* KSBleCoinManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD56A94217713EA0075506A /* KSBleCoinManage.m */; };
+		FADDDA192175C2280033FF96 /* KSBleConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDDA182175C2280033FF96 /* KSBleConvertTool.m */; };
+		FADDDA1C2175CFAF0033FF96 /* KSBleIssuedDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDDA1B2175CFAF0033FF96 /* KSBleIssuedDataManage.m */; };
+		FADDDA1F2175CFE50033FF96 /* KSBleReciveDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDDA1E2175CFE50033FF96 /* KSBleReciveDataManage.m */; };
+		FADDDA232175F8980033FF96 /* KSBleDevInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDDA222175F8980033FF96 /* KSBleDevInfoModel.m */; };
+		FADDDA26217602600033FF96 /* KSBleBtAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDDA25217602600033FF96 /* KSBleBtAccountModel.m */; };
+		FAEA78F8216AFF430017D66C /* ColaBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEA78F7216AFF430017D66C /* ColaBluetoothViewController.m */; };
+		FAEA78FA216B5B580017D66C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA78F9216B5B580017D66C /* CoreBluetooth.framework */; };
+		FAF5AA01217585C900920DFC /* KSBleMonitorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5AA00217585C900920DFC /* KSBleMonitorModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColaNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD34AB24F82EB664CD29D4B /* Pods-ColaNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColaNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColaNotes/Pods-ColaNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		C91358272DA008B8884F3654 /* Pods-ColaNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColaNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColaNotes/Pods-ColaNotes.release.xcconfig"; sourceTree = "<group>"; };
+		EFCB9AC42232701800C52F51 /* ColaHubLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaHubLoading.h; sourceTree = "<group>"; };
+		EFCB9AC52232701800C52F51 /* ColaHubLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaHubLoading.m; sourceTree = "<group>"; };
 		FA0449BA21476021009486A2 /* ColaScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaScanView.h; sourceTree = "<group>"; };
 		FA0449BB21476021009486A2 /* ColaScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaScanView.m; sourceTree = "<group>"; };
 		FA10177121364516006AC1D7 /* Cola1stViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola1stViewController.h; sourceTree = "<group>"; };
@@ -79,6 +103,14 @@
 		FA10178B21368CD7006AC1D7 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		FA10178D21369947006AC1D7 /* ColaTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTabViewController.h; sourceTree = "<group>"; };
 		FA10178E21369947006AC1D7 /* ColaTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaTabViewController.m; sourceTree = "<group>"; };
+		FA255E2121BBA86800F2A617 /* ColaGesLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaGesLockViewController.h; sourceTree = "<group>"; };
+		FA255E2221BBA86800F2A617 /* ColaGesLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaGesLockViewController.m; sourceTree = "<group>"; };
+		FA255E2421BBACAC00F2A617 /* ColaGesLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaGesLockView.h; sourceTree = "<group>"; };
+		FA255E2521BBACAC00F2A617 /* ColaGesLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaGesLockView.m; sourceTree = "<group>"; };
+		FA255E2721BBB3B700F2A617 /* ColaGesButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaGesButton.h; sourceTree = "<group>"; };
+		FA255E2821BBB3B700F2A617 /* ColaGesButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaGesButton.m; sourceTree = "<group>"; };
+		FA394D2A2175897400495F2B /* KSBleBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleBaseModel.h; sourceTree = "<group>"; };
+		FA394D2B2175897400495F2B /* KSBleBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleBaseModel.m; sourceTree = "<group>"; };
 		FA45DD21213CE0BE00BC0954 /* ColaSnowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaSnowViewController.h; sourceTree = "<group>"; };
 		FA45DD22213CE0BE00BC0954 /* ColaSnowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaSnowViewController.m; sourceTree = "<group>"; };
 		FA45DD24213CE3B000BC0954 /* ColaSnowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaSnowView.h; sourceTree = "<group>"; };
@@ -101,12 +133,24 @@
 		FA4E3F48212C17C60033ABF8 /* ColaNavBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaNavBaseViewController.m; sourceTree = "<group>"; };
 		FA737954213E69F40029EEFC /* ColaAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaAlert.h; sourceTree = "<group>"; };
 		FA737955213E69F40029EEFC /* ColaAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColaAlert.m; sourceTree = "<group>"; };
+		FA8687C5220027A100910EE6 /* KSVCBBorderLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVCBBorderLabel.h; sourceTree = "<group>"; };
+		FA8687C6220027A100910EE6 /* KSVCBBorderLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSVCBBorderLabel.m; sourceTree = "<group>"; };
+		FA8687C8220031C400910EE6 /* KSVCBTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVCBTextField.h; sourceTree = "<group>"; };
+		FA8687C9220031C400910EE6 /* KSVCBTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSVCBTextField.m; sourceTree = "<group>"; };
+		FA8687CF220041CA00910EE6 /* ColaUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaUIViewController.h; sourceTree = "<group>"; };
+		FA8687D0220041CA00910EE6 /* ColaUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaUIViewController.m; sourceTree = "<group>"; };
+		FA8687D22200471D00910EE6 /* KSVCBCoinButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVCBCoinButton.h; sourceTree = "<group>"; };
+		FA8687D32200471D00910EE6 /* KSVCBCoinButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSVCBCoinButton.m; sourceTree = "<group>"; };
+		FA8B676121FEA55500C4B973 /* KSVCBBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVCBBottomView.h; sourceTree = "<group>"; };
+		FA8B676221FEA55500C4B973 /* KSVCBBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSVCBBottomView.m; sourceTree = "<group>"; };
 		FA8B98DA214646DC0076E8F6 /* Cola1stCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola1stCell.h; sourceTree = "<group>"; };
 		FA8B98DB214646DC0076E8F6 /* Cola1stCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cola1stCell.m; sourceTree = "<group>"; };
 		FA8B98E12146587E0076E8F6 /* ColaNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColaNotes.entitlements; sourceTree = "<group>"; };
 		FA8B98E2214658960076E8F6 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		FA8B98E5214665650076E8F6 /* ColaScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaScanViewController.h; sourceTree = "<group>"; };
 		FA8B98E6214665650076E8F6 /* ColaScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaScanViewController.m; sourceTree = "<group>"; };
+		FA9146D32178624C00FD4D74 /* KSBleModelManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleModelManage.h; sourceTree = "<group>"; };
+		FA9146D42178624C00FD4D74 /* KSBleModelManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleModelManage.m; sourceTree = "<group>"; };
 		FA9813A321391FE4000ACB87 /* ColaBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseModel.h; sourceTree = "<group>"; };
 		FA9813A421391FE4000ACB87 /* ColaBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseModel.m; sourceTree = "<group>"; };
 		FA9813A821392511000ACB87 /* ColaDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaDeviceInfo.h; sourceTree = "<group>"; };
@@ -137,13 +181,15 @@
 		FAA5EAE1213802BD00FDACA5 /* ColaBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseTableViewController.m; sourceTree = "<group>"; };
 		FAA5EAE3213802D300FDACA5 /* ColaBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBaseTableViewCell.h; sourceTree = "<group>"; };
 		FAA5EAE4213802D300FDACA5 /* ColaBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBaseTableViewCell.m; sourceTree = "<group>"; };
+		FAAAA8CF21E766A700734C56 /* ColaShareInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaShareInstance.h; sourceTree = "<group>"; };
+		FAAAA8D021E766A700734C56 /* ColaShareInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaShareInstance.m; sourceTree = "<group>"; };
 		FAB1A17521354D3F004F1A14 /* ColaMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaMacros.h; sourceTree = "<group>"; };
 		FAB1A17721354E02004F1A14 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FAB1A17921354E7B004F1A14 /* ColaFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaFiles.h; sourceTree = "<group>"; };
 		FAB2890B215E23700040D3A5 /* ColaArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaArrayViewController.h; sourceTree = "<group>"; };
 		FAB2890C215E23700040D3A5 /* ColaArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaArrayViewController.m; sourceTree = "<group>"; };
-		FAB5DE7D215E3A85001C6C50 /* NSArrayCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayCrash.h; sourceTree = "<group>"; };
-		FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayCrash.m; sourceTree = "<group>"; };
+		FABCD54D216C87CB00045B97 /* ColaBluetoothCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBluetoothCell.h; sourceTree = "<group>"; };
+		FABCD54E216C87CB00045B97 /* ColaBluetoothCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBluetoothCell.m; sourceTree = "<group>"; };
 		FAD2A5962138DDF30090EF1E /* ColaTableHeadRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableHeadRefresh.h; sourceTree = "<group>"; };
 		FAD2A5972138DDF30090EF1E /* ColaTableHeadRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaTableHeadRefresh.m; sourceTree = "<group>"; };
 		FAD2A5992138DE070090EF1E /* ColaTableFootMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaTableFootMore.h; sourceTree = "<group>"; };
@@ -151,6 +197,25 @@
 		FAD2A59C2138E46B0090EF1E /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		FAD2A59D2138E46B0090EF1E /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		FAD2A5A72138EE390090EF1E /* ColaRefreshImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ColaRefreshImages.bundle; sourceTree = "<group>"; };
+		FAD56A912176DAC40075506A /* ColdlerCoinBaseInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ColdlerCoinBaseInfo.plist; sourceTree = "<group>"; };
+		FAD56A93217713EA0075506A /* KSBleCoinManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleCoinManage.h; sourceTree = "<group>"; };
+		FAD56A94217713EA0075506A /* KSBleCoinManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleCoinManage.m; sourceTree = "<group>"; };
+		FADDDA172175C2280033FF96 /* KSBleConvertTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleConvertTool.h; sourceTree = "<group>"; };
+		FADDDA182175C2280033FF96 /* KSBleConvertTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleConvertTool.m; sourceTree = "<group>"; };
+		FADDDA1A2175CFAF0033FF96 /* KSBleIssuedDataManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleIssuedDataManage.h; sourceTree = "<group>"; };
+		FADDDA1B2175CFAF0033FF96 /* KSBleIssuedDataManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleIssuedDataManage.m; sourceTree = "<group>"; };
+		FADDDA1D2175CFE50033FF96 /* KSBleReciveDataManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleReciveDataManage.h; sourceTree = "<group>"; };
+		FADDDA1E2175CFE50033FF96 /* KSBleReciveDataManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleReciveDataManage.m; sourceTree = "<group>"; };
+		FADDDA202175E5A10033FF96 /* KSBleConstDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleConstDefine.h; sourceTree = "<group>"; };
+		FADDDA212175F8980033FF96 /* KSBleDevInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleDevInfoModel.h; sourceTree = "<group>"; };
+		FADDDA222175F8980033FF96 /* KSBleDevInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleDevInfoModel.m; sourceTree = "<group>"; };
+		FADDDA24217602600033FF96 /* KSBleBtAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleBtAccountModel.h; sourceTree = "<group>"; };
+		FADDDA25217602600033FF96 /* KSBleBtAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleBtAccountModel.m; sourceTree = "<group>"; };
+		FAEA78F6216AFF430017D66C /* ColaBluetoothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColaBluetoothViewController.h; sourceTree = "<group>"; };
+		FAEA78F7216AFF430017D66C /* ColaBluetoothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColaBluetoothViewController.m; sourceTree = "<group>"; };
+		FAEA78F9216B5B580017D66C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FAF5A9FF217585C900920DFC /* KSBleMonitorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSBleMonitorModel.h; sourceTree = "<group>"; };
+		FAF5AA00217585C900920DFC /* KSBleMonitorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSBleMonitorModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEA78FA216B5B580017D66C /* CoreBluetooth.framework in Frameworks */,
 				B944DB718FAEECB5AAA9750C /* libPods-ColaNotes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,10 +243,20 @@
 		A88EA392364ED54FB507A42E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAEA78F9216B5B580017D66C /* CoreBluetooth.framework */,
 				FA8B98E2214658960076E8F6 /* CoreNFC.framework */,
 				333D995A4510F15D0929EC2C /* libPods-ColaNotes.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFCB9AC32232700B00C52F51 /* ColaHub(自定义加载动画) */ = {
+			isa = PBXGroup;
+			children = (
+				EFCB9AC42232701800C52F51 /* ColaHubLoading.h */,
+				EFCB9AC52232701800C52F51 /* ColaHubLoading.m */,
+			);
+			path = "ColaHub(自定义加载动画)";
 			sourceTree = "<group>";
 		};
 		FA10178321367F31006AC1D7 /* ColaCategory */ = {
@@ -202,6 +278,19 @@
 				FA9813C6213967FB000ACB87 /* UIImageView+Bomb.m */,
 			);
 			path = ColaCategory;
+			sourceTree = "<group>";
+		};
+		FA255E1A21BBA78F00F2A617 /* GesLock(指纹锁) */ = {
+			isa = PBXGroup;
+			children = (
+				FA255E2121BBA86800F2A617 /* ColaGesLockViewController.h */,
+				FA255E2221BBA86800F2A617 /* ColaGesLockViewController.m */,
+				FA255E2421BBACAC00F2A617 /* ColaGesLockView.h */,
+				FA255E2521BBACAC00F2A617 /* ColaGesLockView.m */,
+				FA255E2721BBB3B700F2A617 /* ColaGesButton.h */,
+				FA255E2821BBB3B700F2A617 /* ColaGesButton.m */,
+			);
+			path = "GesLock(指纹锁)";
 			sourceTree = "<group>";
 		};
 		FA45DD20213CE0A800BC0954 /* ColaSnow(下雪效果) */ = {
@@ -282,6 +371,8 @@
 				FAD2A59A2138DE070090EF1E /* ColaTableFootMore.m */,
 				FA9813A321391FE4000ACB87 /* ColaBaseModel.h */,
 				FA9813A421391FE4000ACB87 /* ColaBaseModel.m */,
+				FAAAA8CF21E766A700734C56 /* ColaShareInstance.h */,
+				FAAAA8D021E766A700734C56 /* ColaShareInstance.m */,
 			);
 			path = ColaBase;
 			sourceTree = "<group>";
@@ -308,6 +399,30 @@
 			path = "ColaAlert(自定义弹出框)";
 			sourceTree = "<group>";
 		};
+		FA8687CE220041B200910EE6 /* ColaUI(定制控件) */ = {
+			isa = PBXGroup;
+			children = (
+				FA8687CF220041CA00910EE6 /* ColaUIViewController.h */,
+				FA8687D0220041CA00910EE6 /* ColaUIViewController.m */,
+			);
+			path = "ColaUI(定制控件)";
+			sourceTree = "<group>";
+		};
+		FA8B675D21FE9ABA00C4B973 /* ColaTextField(自定义输入框) */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B676121FEA55500C4B973 /* KSVCBBottomView.h */,
+				FA8B676221FEA55500C4B973 /* KSVCBBottomView.m */,
+				FA8687C5220027A100910EE6 /* KSVCBBorderLabel.h */,
+				FA8687C6220027A100910EE6 /* KSVCBBorderLabel.m */,
+				FA8687C8220031C400910EE6 /* KSVCBTextField.h */,
+				FA8687C9220031C400910EE6 /* KSVCBTextField.m */,
+				FA8687D22200471D00910EE6 /* KSVCBCoinButton.h */,
+				FA8687D32200471D00910EE6 /* KSVCBCoinButton.m */,
+			);
+			path = "ColaTextField(自定义输入框)";
+			sourceTree = "<group>";
+		};
 		FA8B98E42146655B0076E8F6 /* ColaScan(扫一扫) */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,8 +440,6 @@
 				FA9813AB21392680000ACB87 /* ColaDeviceConst.h */,
 				FA9813A821392511000ACB87 /* ColaDeviceInfo.h */,
 				FA9813A921392511000ACB87 /* ColaDeviceInfo.m */,
-				FAB5DE7D215E3A85001C6C50 /* NSArrayCrash.h */,
-				FAB5DE7E215E3A85001C6C50 /* NSArrayCrash.m */,
 			);
 			path = ColaTool;
 			sourceTree = "<group>";
@@ -334,6 +447,8 @@
 		FA9813A7213924D6000ACB87 /* ColaUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EFCB9AC32232700B00C52F51 /* ColaHub(自定义加载动画) */,
+				FA8B675D21FE9ABA00C4B973 /* ColaTextField(自定义输入框) */,
 				FA737953213E69F40029EEFC /* ColaAlert(自定义弹出框) */,
 			);
 			path = ColaUIKit;
@@ -366,6 +481,9 @@
 		FAB1A16F21354CF9004F1A14 /* Cola1st */ = {
 			isa = PBXGroup;
 			children = (
+				FA8687CE220041B200910EE6 /* ColaUI(定制控件) */,
+				FA255E1A21BBA78F00F2A617 /* GesLock(指纹锁) */,
+				FAEA78F5216AFF290017D66C /* ColaBluetooth(蓝牙交互) */,
 				FAB2890A215E235E0040D3A5 /* ColaArray(数组遍历) */,
 				FA8B98E42146655B0076E8F6 /* ColaScan(扫一扫) */,
 				FA10177121364516006AC1D7 /* Cola1stViewController.h */,
@@ -443,6 +561,37 @@
 			path = "ColaArray(数组遍历)";
 			sourceTree = "<group>";
 		};
+		FAEA78F5216AFF290017D66C /* ColaBluetooth(蓝牙交互) */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA78F6216AFF430017D66C /* ColaBluetoothViewController.h */,
+				FAEA78F7216AFF430017D66C /* ColaBluetoothViewController.m */,
+				FABCD54D216C87CB00045B97 /* ColaBluetoothCell.h */,
+				FABCD54E216C87CB00045B97 /* ColaBluetoothCell.m */,
+				FADDDA202175E5A10033FF96 /* KSBleConstDefine.h */,
+				FADDDA172175C2280033FF96 /* KSBleConvertTool.h */,
+				FADDDA182175C2280033FF96 /* KSBleConvertTool.m */,
+				FADDDA1A2175CFAF0033FF96 /* KSBleIssuedDataManage.h */,
+				FADDDA1B2175CFAF0033FF96 /* KSBleIssuedDataManage.m */,
+				FADDDA1D2175CFE50033FF96 /* KSBleReciveDataManage.h */,
+				FADDDA1E2175CFE50033FF96 /* KSBleReciveDataManage.m */,
+				FA9146D32178624C00FD4D74 /* KSBleModelManage.h */,
+				FA9146D42178624C00FD4D74 /* KSBleModelManage.m */,
+				FA394D2A2175897400495F2B /* KSBleBaseModel.h */,
+				FA394D2B2175897400495F2B /* KSBleBaseModel.m */,
+				FAF5A9FF217585C900920DFC /* KSBleMonitorModel.h */,
+				FAF5AA00217585C900920DFC /* KSBleMonitorModel.m */,
+				FADDDA212175F8980033FF96 /* KSBleDevInfoModel.h */,
+				FADDDA222175F8980033FF96 /* KSBleDevInfoModel.m */,
+				FADDDA24217602600033FF96 /* KSBleBtAccountModel.h */,
+				FADDDA25217602600033FF96 /* KSBleBtAccountModel.m */,
+				FAD56A912176DAC40075506A /* ColdlerCoinBaseInfo.plist */,
+				FAD56A93217713EA0075506A /* KSBleCoinManage.h */,
+				FAD56A94217713EA0075506A /* KSBleCoinManage.m */,
+			);
+			path = "ColaBluetooth(蓝牙交互)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +626,9 @@
 					FA4E3F19212C11180033ABF8 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.NearFieldCommunicationTagReading = {
 								enabled = 0;
 							};
@@ -507,6 +659,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD56A922176DAC40075506A /* ColdlerCoinBaseInfo.plist in Resources */,
 				FAD2A5A82138EE390090EF1E /* ColaRefreshImages.bundle in Resources */,
 				FA4E3F40212C15BD0033ABF8 /* Assets.xcassets in Resources */,
 				FA9813C121396135000ACB87 /* ColaBombImages.bundle in Resources */,
@@ -559,46 +712,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEA78F8216AFF430017D66C /* ColaBluetoothViewController.m in Sources */,
 				FA0449BC21476021009486A2 /* ColaScanView.m in Sources */,
 				FA1017792136452D006AC1D7 /* Cola3rdViewController.m in Sources */,
 				FA9813B121393AA1000ACB87 /* Cola5veModel.m in Sources */,
 				FAD2A5982138DDF30090EF1E /* ColaTableHeadRefresh.m in Sources */,
+				FA8687C7220027A100910EE6 /* KSVCBBorderLabel.m in Sources */,
+				FAD56A95217713EA0075506A /* KSBleCoinManage.m in Sources */,
+				FADDDA26217602600033FF96 /* KSBleBtAccountModel.m in Sources */,
 				FA4E3F49212C17C60033ABF8 /* ColaNavBaseViewController.m in Sources */,
+				FA255E2321BBA86800F2A617 /* ColaGesLockViewController.m in Sources */,
+				FAF5AA01217585C900920DFC /* KSBleMonitorModel.m in Sources */,
 				FA4E3F46212C17AF0033ABF8 /* ColaBaseViewController.m in Sources */,
 				FA10177F21364543006AC1D7 /* Cola5veViewController.m in Sources */,
 				FA10177621364521006AC1D7 /* Cola2ndViewController.m in Sources */,
 				FA9813AA21392511000ACB87 /* ColaDeviceInfo.m in Sources */,
 				FA10178C21368CD7006AC1D7 /* NSString+Category.m in Sources */,
+				FADDDA1F2175CFE50033FF96 /* KSBleReciveDataManage.m in Sources */,
 				FA737956213E69F40029EEFC /* ColaAlert.m in Sources */,
 				FA9813BF2139594D000ACB87 /* ColaBombViewController.m in Sources */,
 				FA45DD26213CE3B000BC0954 /* ColaSnowView.m in Sources */,
 				FA9813A521391FE4000ACB87 /* ColaBaseModel.m in Sources */,
 				FAA5EADC21379BC600FDACA5 /* UIButton+Position.m in Sources */,
+				FADDDA1C2175CFAF0033FF96 /* KSBleIssuedDataManage.m in Sources */,
 				FA4E3F42212C15BD0033ABF8 /* main.m in Sources */,
+				FA8B676321FEA55500C4B973 /* KSVCBBottomView.m in Sources */,
+				FA255E2621BBACAC00F2A617 /* ColaGesLockView.m in Sources */,
 				FA45DD23213CE0BE00BC0954 /* ColaSnowViewController.m in Sources */,
 				FA9813B5213940BA000ACB87 /* ColaDeviceInfoViewController.m in Sources */,
 				FA45DD30213D160A00BC0954 /* ColaAlbumViewController.m in Sources */,
+				FAAAA8D121E766A700734C56 /* ColaShareInstance.m in Sources */,
 				FA8B98E7214665650076E8F6 /* ColaScanViewController.m in Sources */,
+				EFCB9AC62232701800C52F51 /* ColaHubLoading.m in Sources */,
 				FA9813C7213967FB000ACB87 /* UIImageView+Bomb.m in Sources */,
 				FA45DD29213CE88900BC0954 /* Cola4urModel.m in Sources */,
 				FAD2A59B2138DE070090EF1E /* ColaTableFootMore.m in Sources */,
 				FA10177C21364538006AC1D7 /* Cola4urViewController.m in Sources */,
+				FA8687CA220031C400910EE6 /* KSVCBTextField.m in Sources */,
 				FAA5EAE5213802D300FDACA5 /* ColaBaseTableViewCell.m in Sources */,
+				FA255E2921BBB3B700F2A617 /* ColaGesButton.m in Sources */,
 				FA8B98DC214646DC0076E8F6 /* Cola1stCell.m in Sources */,
+				FA9146D52178624C00FD4D74 /* KSBleModelManage.m in Sources */,
+				FA8687D1220041CA00910EE6 /* ColaUIViewController.m in Sources */,
 				FAA5EAE2213802BE00FDACA5 /* ColaBaseTableViewController.m in Sources */,
 				FAA5EADF21379F5E00FDACA5 /* UIButton+Category.m in Sources */,
 				FA9813B8213940DA000ACB87 /* ColaDeviceInfoCell.m in Sources */,
 				FA9813BB2139410E000ACB87 /* ColaDeviceInfoModel.m in Sources */,
 				FA10178F21369947006AC1D7 /* ColaTabViewController.m in Sources */,
+				FA8687D42200471D00910EE6 /* KSVCBCoinButton.m in Sources */,
+				FADDDA192175C2280033FF96 /* KSBleConvertTool.m in Sources */,
 				FA10177321364516006AC1D7 /* Cola1stViewController.m in Sources */,
+				FADDDA232175F8980033FF96 /* KSBleDevInfoModel.m in Sources */,
 				FA10178921368941006AC1D7 /* UILabel+Category.m in Sources */,
 				FA9813AE213939E4000ACB87 /* Cola5veCell.m in Sources */,
-				FAB5DE7F215E3A85001C6C50 /* NSArrayCrash.m in Sources */,
 				FA4E3F38212C157E0033ABF8 /* AppDelegate.m in Sources */,
 				FA45DD2C213D0C7500BC0954 /* Cola4urCell.m in Sources */,
+				FABCD54F216C87CB00045B97 /* ColaBluetoothCell.m in Sources */,
 				FAB2890D215E23700040D3A5 /* ColaArrayViewController.m in Sources */,
 				FAD2A59E2138E46B0090EF1E /* UIView+Category.m in Sources */,
 				FA10178621367FF2006AC1D7 /* UIImage+Category.m in Sources */,
+				FA394D2C2175897400495F2B /* KSBleBaseModel.m in Sources */,
 				FA9813C421396256000ACB87 /* ColaBombImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

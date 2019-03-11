@@ -12,6 +12,8 @@
 #import "ColaDeviceInfoViewController.h"
 #import "ColaBombViewController.h"
 #import "ColaSnowViewController.h"
+#import "ColaShareInstance.h"
+#import "KSVCBBottomView.h"
 
 @interface Cola5veViewController ()
 
@@ -34,6 +36,11 @@
     
     [self setTableViewDataSource];
     [self.listTable reloadData];
+    
+    [[ColaShareInstance shareInstance] setaaaaaValue:@"mmmmmm"];
+    
+    self.listTable.tableFooterView = [[KSVCBBottomView alloc] initWithFrame:CGRectZero vcbViewType:KSVCBBottomViewTypePledge];
+    
 }
 
 #pragma mark -

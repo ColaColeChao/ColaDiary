@@ -22,10 +22,16 @@
 	<true/>
 	<key>NFCReaderUsageDescription</key>
 	<string>为了提供更好的服务，Cola笔记需要使用您的NFC</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>为了提供更好的服务，Cola笔记需要使用您的蓝牙</string>
 	<key>NSCameraUsageDescription</key>
 	<string>为了提供更好的服务，Cola笔记需要使用您的相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>为了提供更好的服务，Cola笔记需要使用您的相册</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

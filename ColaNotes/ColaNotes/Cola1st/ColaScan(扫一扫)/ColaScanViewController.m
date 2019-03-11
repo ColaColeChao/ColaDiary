@@ -7,6 +7,7 @@
 //
 
 #import "ColaScanViewController.h"
+#import "ColaShareInstance.h"
 
 @interface ColaScanViewController ()
 
@@ -21,7 +22,7 @@
     //  隐藏导航栏和导航栏标题
     [self hiddenNavTitle];
     
-    
+    [[ColaShareInstance shareInstance] setaaaaaaaaaaaaaaa];
 }
 
 - (void)didReceiveMemoryWarning {

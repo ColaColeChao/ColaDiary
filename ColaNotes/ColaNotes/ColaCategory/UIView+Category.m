@@ -116,4 +116,36 @@
     return self.center.y;
 }
 
+/**
+ UIView定制圆角
+ @param cornerRadius 圆角弧度
+ @param borderWidth  边线宽度
+ @param borderColor  边线颜色
+ @param fillColor    填充颜色
+ @param corners      定制圆角
+ */
+- (void)setBorderWithCornerRadius:(CGFloat)cornerRadius
+                      borderWidth:(CGFloat)borderWidth
+                      borderColor:(UIColor *)borderColor
+                        fillColor:(UIColor*)fillColor
+                          corners:(UIRectCorner)corners;
+{
+    CGRect rect = CGRectMake(borderWidth/2.0, borderWidth/2.0,
+                             CGRectGetWidth(self.frame)-borderWidth, CGRectGetHeight(self.frame)-borderWidth);
+    CGSize radii = CGSizeMake(cornerRadius, borderWidth);
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:radii];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.strokeColor = borderColor.CGColor;
+    shapeLayer.lineWidth = borderWidth;
+    shapeLayer.lineJoin = kCALineJoinRound;
+    shapeLayer.lineCap = kCALineCapRound;
+    shapeLayer.path = path.CGPath;
+    if (fillColor) {
+        shapeLayer.fillColor = fillColor.CGColor;
+    } else {
+        shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    }
+    [self.layer addSublayer:shapeLayer];
+}
+
 @end

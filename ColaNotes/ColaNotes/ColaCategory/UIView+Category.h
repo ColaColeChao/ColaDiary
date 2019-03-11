@@ -31,4 +31,19 @@
 /** UIView的中心y坐标 */
 @property (nonatomic, assign) CGFloat centerY;
 
+
+/**
+ UIView定制圆角
+ @param cornerRadius 圆角弧度
+ @param borderWidth  边线宽度
+ @param borderColor  边线颜色
+ @param fillColor    填充颜色
+ @param corners      定制圆角
+ */
+- (void)setBorderWithCornerRadius:(CGFloat)cornerRadius
+                      borderWidth:(CGFloat)borderWidth
+                      borderColor:(UIColor *)borderColor
+                        fillColor:(UIColor*)fillColor
+                          corners:(UIRectCorner)corners;
+
 @end

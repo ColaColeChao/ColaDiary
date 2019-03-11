@@ -10,10 +10,15 @@
 #import "Cola1stCell.h"
 #import "ColaScanViewController.h"
 #import "ColaArrayViewController.h"
+#import "ColaBluetoothViewController.h"
+#import "ColaGesLockViewController.h"
+#import "ColaShareInstance.h"
+#import "ColaUIViewController.h"
 
 @interface Cola1stViewController ()
 <UICollectionViewDataSource,
 UICollectionViewDelegate,
+UITextFieldDelegate,
 UICollectionViewDelegateFlowLayout>
 /** 集合视图 */
 @property (nonatomic, strong) UICollectionView *mainCollectionView;
@@ -35,10 +40,8 @@ UICollectionViewDelegateFlowLayout>
     [self.view addSubview:self.mainCollectionView];
     
     [self.mainCollectionView registerClass:[Cola1stCell class] forCellWithReuseIdentifier:ColaIdentifiers(Cola1stCell)];
-    
-    NSArray *array = @[@"1",@"2"];
-    NSLog(@"[%@]",[array objectAtIndex:4]);
 }
+
 
 #pragma mark -
 #pragma mark - UICollectionViewDataSource
@@ -49,14 +52,14 @@ UICollectionViewDelegateFlowLayout>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 2;
+    return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     Cola1stCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ColaIdentifiers(Cola1stCell) forIndexPath:indexPath];
     cell.backgroundColor = [UIColor yellowColor];
-    NSArray *titles = @[@"Scan",@"Array遍历"];
+    NSArray *titles = @[@"Scan",@"Array遍历",@"蓝牙交互", @"指纹锁", @"定制控件"];
     [cell loadCellTitle:titles[indexPath.row]];
     return cell;
 }
@@ -98,6 +101,24 @@ UICollectionViewDelegateFlowLayout>
         {
             ColaArrayViewController *arrayVc = [[ColaArrayViewController alloc] init];
             [self.navigationController pushViewController:arrayVc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            ColaBluetoothViewController *bluetoothVc = [[ColaBluetoothViewController alloc] init];
+            [self.navigationController pushViewController:bluetoothVc animated:YES];
+        }
+            break;
+        case 3:
+        {
+            ColaGesLockViewController *gesLockVc = [[ColaGesLockViewController alloc] init];
+            [self.navigationController pushViewController:gesLockVc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            ColaUIViewController *uiVc = [[ColaUIViewController alloc] init];
+            [self.navigationController pushViewController:uiVc animated:YES];
         }
             break;
         default:

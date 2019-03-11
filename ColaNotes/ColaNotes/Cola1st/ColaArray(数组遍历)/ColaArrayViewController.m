@@ -7,6 +7,7 @@
 //
 
 #import "ColaArrayViewController.h"
+#import "ColaShareInstance.h"
 
 @interface ColaArrayViewController ()
 
@@ -73,6 +74,8 @@
     NSArray *results = [data filteredArrayUsingPredicate:predicate];
     NSLog(@"匹配遍历结束[%f]",[[NSDate date] timeIntervalSince1970]*1000);
     NSLog(@"%@",results);
+    
+    NSLog(@"%@",[[ColaShareInstance shareInstance] getaaaaaValue]);
 }
 
 /*

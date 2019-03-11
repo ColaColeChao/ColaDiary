@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger,UIDeviceModel) {
     UIDeviceiPad2G,  //  2代iPad
     UIDeviceiPad3G,  //  3代iPad
     UIDeviceiPad4G,  //  4代iPad
-    UIDeviceiPadAir1,  //  1代iPadAir
+    UIDeviceiPadAir1,  //  1代iPadAir想·
     UIDeviceiPadAir2,  //  2代iPadAir
     UIDeviceiPadmini1,  //  1代iPadMini
     UIDeviceiPadmini2,  //  2代iPadMini

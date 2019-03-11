@@ -31,6 +31,18 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageViewBomb:)];
         [bombImageView addGestureRecognizer:tap];
     }
+    
+//    [ColaHubLoading showLoading];
+//    [ColaHubLoading showCoverLoading];
+//    [ColaHubLoading showCoverWindowLoading];
+//
+//    [ColaHubLoading showMessage:@"1111111"];
+//    [ColaHubLoading showCoverMessage:@"2222222"];
+//    [ColaHubLoading showCoverWindowMessage:@"33333333"];
+
+    [ColaHubLoading showLoadingDelay:5];
+//    [ColaHubLoading showCoverLoadingDelay:5];
+//    [ColaHubLoading showCoverWindowLoadingDelay:5];
 }
 
 #pragma mark -

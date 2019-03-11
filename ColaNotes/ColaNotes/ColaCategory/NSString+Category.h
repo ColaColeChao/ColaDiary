@@ -25,4 +25,28 @@
  */
 - (CGSize)sizeInLabelWithMaxSize:(CGSize)maxSize txtFont:(UIFont*)font lines:(int)lines;
 
+/**
+ 时间戳转换成格式化日期
+ C转换： 568610642.888382 - 568610642.889125 = 0.000743 快
+ OC转换：568610785.535561 - 568610785.541707 = 0.006146 慢
+ @return 时间戳(秒/毫秒)
+ */
+- (NSString*)toFormatTimes;
+
+/**
+ 小数位数限制，按照位数自动截取
+ @param digits 限制的位数
+ @return 截取后的字符串
+ */
+- (NSString*)cutDigitsLimitInt:(int)digits;
+
+/**
+ 判断小数位数，是否是允许输入的小数位数
+ @param digits 小数位数
+ @return 是否是允许输入的小数位数
+ */
+- (BOOL)judgeInputDigitsInt:(int)digits;
+
+
+
 @end

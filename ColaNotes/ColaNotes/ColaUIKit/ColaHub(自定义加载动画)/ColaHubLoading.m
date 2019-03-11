@@ -47,6 +47,9 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
 {
     [self endLoading];
     self.frame = CGRectZero;
+    self.loadingView.layer.cornerRadius = 10.f;
+    self.loadingView.frame = CGRectMake(0, 0, 80, 80);
+    self.loadingView.center = [UIApplication sharedApplication].keyWindow.center;
     [[UIApplication sharedApplication].keyWindow addSubview:self.loadingView];
     [[UIApplication sharedApplication].keyWindow addSubview:self.indicatorView];
     [self.indicatorView startAnimating];
@@ -65,6 +68,9 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
                             [self statusBarHeight],
                             [UIApplication sharedApplication].keyWindow.bounds.size.width,
                             [UIApplication sharedApplication].keyWindow.bounds.size.height - [self statusBarHeight]);
+    self.loadingView.layer.cornerRadius = 10.f;
+    self.loadingView.frame = CGRectMake(0, 0, 80, 80);
+    self.loadingView.center = [UIApplication sharedApplication].keyWindow.center;
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     [[UIApplication sharedApplication].keyWindow addSubview:self.loadingView];
     [[UIApplication sharedApplication].keyWindow addSubview:self.indicatorView];
@@ -81,6 +87,9 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
 {
     [self endLoading];
     self.frame = [UIApplication sharedApplication].keyWindow.bounds;
+    self.loadingView.layer.cornerRadius = 10.f;
+    self.loadingView.frame = CGRectMake(0, 0, 80, 80);
+    self.loadingView.center = [UIApplication sharedApplication].keyWindow.center;
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     [[UIApplication sharedApplication].keyWindow addSubview:self.loadingView];
     [[UIApplication sharedApplication].keyWindow addSubview:self.indicatorView];
@@ -89,7 +98,7 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
 
 #pragma mark -
 #pragma mark - 弹出吐司提示后，几秒后执行加载动画，显示在window上，不遮盖任何视图，需要调用消失方法
-+ (void)showMessage:(NSString*)message loadingAfterDelay:(float)timestamp
++ (void)showLoadingAfterMessage:(NSString *)message
 {
     [[self shareInstance] showMessage:message coverType:ColaHubLoadingCoverTypeNone];
     [self showLoadingDelay:loading_dismiss_timestamp];
@@ -97,7 +106,7 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
 
 #pragma mark -
 #pragma mark - 弹出吐司提示后，几秒后执行加载动画，显示在window上，遮盖self.view，不遮盖导航栏，需要调用消失方法
-+ (void)showCoverMessage:(NSString*)message loadingAfterDelay:(float)timestamp
++ (void)showCoverLoadingAfterMessage:(NSString *)message
 {
     [[self shareInstance] showMessage:message coverType:ColaHubLoadingCoverTypeView];
     [self showLoadingDelay:loading_dismiss_timestamp];
@@ -105,7 +114,7 @@ typedef NS_ENUM(NSUInteger, ColaHubLoadingCoverType) {
 
 #pragma mark -
 #pragma mark - 弹出吐司提示后，几秒后执行加载动画，显示在window上，遮盖window，loading期间不能点击，需要调用消失方法
-+ (void)showCoverWindowMessage:(NSString*)message loadingAfterDelay:(float)timestamp
++ (void)showCoverWindowLoadingAfterMessage:(NSString *)message
 {
     [[self shareInstance] showMessage:message coverType:ColaHubLoadingCoverTypeWindow];
     [self showLoadingDelay:loading_dismiss_timestamp];

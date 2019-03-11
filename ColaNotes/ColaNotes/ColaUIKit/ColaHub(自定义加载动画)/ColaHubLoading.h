@@ -52,21 +52,21 @@
 #pragma mark  ---------- 加载吐司提示后，再加载loading ----------
 /**
  弹出吐司提示后，几秒后执行加载动画，显示在window上，不遮盖任何视图，需要调用消失方法
- @param timestamp 延迟时间，秒级
+ @param message 提示内容
  */
-+ (void)showMessage:(NSString*)message loadingAfterDelay:(float)timestamp;
++ (void)showLoadingAfterMessage:(NSString*)message;
 
 /**
  弹出吐司提示后，几秒后执行加载动画，显示在window上，遮盖self.view，不遮盖导航栏，需要调用消失方法
- @param timestamp 延迟时间，秒级
+ @param message 提示内容
  */
-+ (void)showCoverMessage:(NSString*)message loadingAfterDelay:(float)timestamp;
++ (void)showCoverLoadingAfterMessage:(NSString*)message;
 
 /**
  弹出吐司提示后，几秒后执行加载动画，显示在window上，遮盖window，loading期间不能点击，需要调用消失方法
- @param timestamp 延迟时间，秒级
+ @param message 提示内容
  */
-+ (void)showCoverWindowMessage:(NSString*)message loadingAfterDelay:(float)timestamp;
++ (void)showCoverWindowLoadingAfterMessage:(NSString*)message;
 
 
 #pragma mark  ---------- 延迟加载吐司提示 ----------
